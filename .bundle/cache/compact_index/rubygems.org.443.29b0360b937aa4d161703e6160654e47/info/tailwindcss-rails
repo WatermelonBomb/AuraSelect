@@ -1,0 +1,465 @@
+---
+0.1.0 rails:>= 6.0.0|checksum:3e7a692cfd7caa5c5898e200975aaab0f73cedc263d05921e0394ba129a8e64a
+0.2.0 rails:>= 6.0.0|checksum:c0346c01c872b9319d526c58e53ecda9f36aa043754a41dd9efadf48f4ef5f6e
+0.2.1 rails:>= 6.0.0|checksum:3fbe2ee92bb103bc31fa3a0bbba18307ea992d3e7e5dd284dcdacf40bcb85a34
+0.3.0 rails:>= 6.0.0|checksum:f64c074164911781c0c6b2fab9f0c07dd3d6a22aac1e8b9038d4f1653dd3352d
+0.3.1 rails:>= 6.0.0|checksum:0848be29864ef07cd431dae56b9ba330572e38663818e37620c6b60ffa9c2943
+0.3.3 rails:>= 6.0.0|checksum:cbb55ba74b0bc72e23465eaaa3d16a0399a07e7407e51b84a4e59a11f4b9381e
+0.4.0 rails:>= 6.0.0|checksum:910afaab425cb9a75fa8dc8068680d766066196236eb212bc4f3b424f145b6fe
+0.4.1 rails:>= 6.0.0|checksum:63d64120602d6597839190a87dfa7580a49f8f5b0714d4f32308bb1dfa0f4cdf
+0.4.2 rails:>= 6.0.0|checksum:0802ffc3e8aafd25e443f52e2255266f0ebc98cd218f823adba6cf42925275a8
+0.4.3 rails:>= 6.0.0|checksum:f08a7e095eccac6fa59273bb4e825b669e8743efa82f7c88b2e4785621f8c08d
+0.5.0 rails:>= 6.0.0|checksum:ca56803b1a248dfe56388681a8db0a73388413b180d91dbf1c74356b69a2f18c
+0.5.1 rails:>= 6.0.0|checksum:49cb97d9d6fd02d471680b5aeecb81d7398493411e6b6b5810bc96eaeaba8ef5
+0.5.2 rails:>= 6.0.0|checksum:c17d58157326673d511035b1419b6215c3c9b84585226386cce9f2e8f4fd3e09
+0.5.3 rails:>= 6.0.0|checksum:f1d9aa94536efdc4980d8017a4c3dc2b7dce393ad229dc413c3a6a4bf4391710
+0.5.4 railties:>= 6.0.0|checksum:173b0e316a1c82a1e80a3b8eb843fa10ba78792046e7db85fdcb274f2a7c30b9
+1.0.0 railties:>= 6.0.0|checksum:03fabbc6f36ddd29b7fe6877343b49cef2678aafe63cbddb55f861a19f5e3486
+2.0.0.rc1-arm64-darwin railties:>= 6.0.0|checksum:ce1910b4d269630647b3ec513138795c3a11b0b0b2ef83364d21056e1002f8b3,rubygems:> 1.3.1
+2.0.0.rc1-x64-mingw32 railties:>= 6.0.0|checksum:f13c793f4912f36d61df238369dc763d016f0d54635fbb7dfe5374c1c5b38a14,rubygems:> 1.3.1
+2.0.0.rc1-x86_64-darwin railties:>= 6.0.0|checksum:7dd0884b7fd4ee919a7da9fbdd1b7672436a9efd9544ec4f1c80417b9b4f8b1f,rubygems:> 1.3.1
+2.0.0.rc1-x86_64-linux railties:>= 6.0.0|checksum:5d20dd57949ece1d48a544ddce8c13df8a3d217d3945db1084223b9e8cc0990e,rubygems:> 1.3.1
+2.0.0.rc1 railties:>= 6.0.0|checksum:f390733cf8b510a00011e2d3b3faa7d0e95358959c34ddb73f984df226c3b77a,rubygems:> 1.3.1
+2.0.0-x64-mingw32 railties:>= 6.0.0|checksum:0056b868397bf0f3fa344958ba9c31ffb371b6170c9bd1f8f86304ad6eb0bd9b
+2.0.0-x86_64-darwin railties:>= 6.0.0|checksum:c81ba5b64f8f9fee8fd529d6d79dc578725dc18a3b46bcac6a0f14d97a1fdb83
+2.0.0-x86_64-linux railties:>= 6.0.0|checksum:e0079fa25ccd3a79578cb24ddca63f08163d09e78bed3a9d12af1c863e9d6744
+2.0.0 railties:>= 6.0.0|checksum:6b099c8600fd55e278cf649b5cb63becd7d24f39eea565a42d637a22de964d45
+2.0.0-arm64-darwin railties:>= 6.0.0|checksum:27b21b6fb42d4fbfc9857a373d1224f9e6ec2b93ef8e357ee4d0515239c78b81
+2.0.1-arm64-darwin railties:>= 6.0.0|checksum:220ad97a4e7b00eccceff6f53527f786ec6bfb93d796355db795d7ebe195a5bc
+2.0.1-x64-mingw32 railties:>= 6.0.0|checksum:9b47659d7cab4064c7b0dcb28ea487d00fe81e0679ee4e0af6d4b00dbddedff4
+2.0.1-x86_64-darwin railties:>= 6.0.0|checksum:ff25f27d897cb342bc1799749ad0b1b7dc0671f61c56f5873982273dfcd00d35
+2.0.1-x86_64-linux railties:>= 6.0.0|checksum:26570ffd3acdbbf899b1ea165bb2ecb7c1eaaf5d537a255f8658827cf5cc13c2
+2.0.1 railties:>= 6.0.0|checksum:df99310dc8c660c1bf97fe7088c386f3da463b5ecfe2094158af0c2f220bd9c7
+2.0.2-arm64-darwin railties:>= 6.0.0|checksum:0af229d9594236704ac750ebe7a7de9f9e41c173c736584648da51a4e85a9c86
+2.0.2-x64-mingw32 railties:>= 6.0.0|checksum:c13433bb3d51cbb7983737e5d23b938251bd5d0f920a7ecb64369e0bfd3ea298
+2.0.2-x86_64-darwin railties:>= 6.0.0|checksum:34d4d01e007b1e740cca71ffd36cdfba624599693876ebe8e7373930df002760
+2.0.2-x86_64-linux railties:>= 6.0.0|checksum:c245d2fd11d32e478dd353c3e1477b70891f4aeeeb287971d2e4ec2b6f101ed5
+2.0.2 railties:>= 6.0.0|checksum:586bc393f123dee3c769345826d78dc5623c4060071c45c5cf50df919db0809f
+2.0.3-aarch64-linux railties:>= 6.0.0|checksum:6b04d040d569f775b6aac1dc76181002e6ed1bf5384b2d3e2fa89eed6c3b2d3d
+2.0.3-arm64-darwin railties:>= 6.0.0|checksum:0b5679c48f41f63d0682b0a4ddc547510919e2fa7622f3eaac46a8cd1d282ccc
+2.0.3-x64-mingw32 railties:>= 6.0.0|checksum:610ab8081a01e083787b7109e7a9062dabde0d2fa6f007f4333286c306792ece
+2.0.3-x86_64-darwin railties:>= 6.0.0|checksum:437d311c613ba28f83db5bfeafff69ec676491e2b275bf6908d131a951fab5c6
+2.0.3-x86_64-linux railties:>= 6.0.0|checksum:117e2b4b6a7a40968cd515b3e20066a8e5fdce96f3f52d76e8ba74eae4309e21
+2.0.3 railties:>= 6.0.0|checksum:0db5b13ac4793f5e54a3315c787663120ff829bab959d2fbfdd8124507990457
+2.0.4-aarch64-linux railties:>= 6.0.0|checksum:a71a3fb304284ef7f7e9d396305e2f44985da634ddabd61c2a038007fc650a5f
+2.0.4-arm64-darwin railties:>= 6.0.0|checksum:c102ee01eabc3c44976bd672625b4fc2783731246a47f6903adcbca4b13abbcf
+2.0.4-x64-mingw32 railties:>= 6.0.0|checksum:b2f386ec95bbfe0c66d9c99d506494e7e2b3f9850451db480f3cab9814e62d64
+2.0.4-x86_64-darwin railties:>= 6.0.0|checksum:6a3e29a54cb99d27049e6e08633b2ee45df378d8cf4d35bbdd1b93e1a096d49b
+2.0.4-x86_64-linux railties:>= 6.0.0|checksum:b3863d37cc003d37feb1ed7a4ea3c257a06fa7660ee121cbfb595bc8595614c8
+2.0.4 railties:>= 6.0.0|checksum:c292d271401d46955570d114f50a1e5fc5eca2b9dc54e4be61c4e95af3bfd3f8
+2.0.5-aarch64-linux railties:>= 6.0.0|checksum:77668f79a02a2e9650fa9b5c8a23c2e5bca503762f57d95a843e261e18d4c4c1
+2.0.5-x86_64-darwin railties:>= 6.0.0|checksum:20329193229aa913ac55fa6fce6c84da0ad11d14952f7f3265bc9ba0629cf5d3
+2.0.5-x86_64-linux railties:>= 6.0.0|checksum:ab61c685a24a90e8442b82f08aade5ddfeee5017d74973bbb2345f0dc920a60a
+2.0.5 railties:>= 6.0.0|checksum:e5a7537b3125c84aeedd899bb0d1248d71803d2ab7c06d19825280791640ebce
+2.0.5-arm64-darwin railties:>= 6.0.0|checksum:2c38a09dff407f5fd2bb75f9f7744c4337debbc7605a35f49a4c9c0198026481
+2.0.5-x64-mingw32 railties:>= 6.0.0|checksum:fa6747a68947de206b3757e1b315cc7cb5e89ba3895e55ca7210677f5fbf692c
+2.0.6-aarch64-linux railties:>= 6.0.0|checksum:2536094f1ec0fe171cfd039432146682e828579432647c7a69f55189f5f96bde
+2.0.6-arm64-darwin railties:>= 6.0.0|checksum:fd6c367de35650e5c162d35ac9554c2d7d7e813371ba864d396bcacf029d2193
+2.0.6-x64-mingw32 railties:>= 6.0.0|checksum:332066727c58b20fea78c6692de5ae8c9a71234dfbf77ced822ff5269adce892
+2.0.6-x86_64-darwin railties:>= 6.0.0|checksum:2f656d64e3ca7682e68e2796878ea85c35722f0b0b554d766a054ae139f93618
+2.0.6-x86_64-linux railties:>= 6.0.0|checksum:f5eb861507e2aa9f98ffb24d21c6660ceb9cec62a66e2846930ceac21b0c4150
+2.0.6 railties:>= 6.0.0|checksum:00500f1cf23ad4d31ff10772f5bc43339bd2bd81e41ec28748a9ef9b46bc0928
+2.0.7-aarch64-linux railties:>= 6.0.0|checksum:e44b0df6c99e68892ceb00c4e4fb62a0fcfeb2db446303ab9703f46257a05cfd
+2.0.7-arm64-darwin railties:>= 6.0.0|checksum:c3f18e3e2b2ceea0e41fcb882af9f685b2de7c03c6fabe5140e00f8ca593f63c
+2.0.7-x64-mingw32 railties:>= 6.0.0|checksum:3489569a2c4e2b79335ef7b7a497d2b8e2bbdf88dc3679d2c37e4806373f782c
+2.0.7-x86_64-darwin railties:>= 6.0.0|checksum:0e650d6798b987360d4bcfbef8d71e79e48ae5e153c61efd45810a80b676d62a
+2.0.7-x86_64-linux railties:>= 6.0.0|checksum:dc239c943c08dd63cace059efdf2a273f3cebb50159de4cf021b4bbdb6d2e370
+2.0.7 railties:>= 6.0.0|checksum:5f5873649309bb6c2fa1bc085670d1b2d55f3f2f85181e790cfb0071acb9ee0a
+2.0.8-aarch64-linux railties:>= 6.0.0|checksum:5979a104ed6759e048b082cdf1f9494fb8da6300c244c8675891db0e6821e842
+2.0.8-arm64-darwin railties:>= 6.0.0|checksum:0711c799f2f4266ebb03908832b30e72dd47f63837ee182c714ec53d78ad5f0e
+2.0.8-x64-mingw32 railties:>= 6.0.0|checksum:add695f90d7e4477e10e9db91a22a3524ae50febb50bed95b1b321360da1424c
+2.0.8-x86_64-darwin railties:>= 6.0.0|checksum:b2bf99ad102e18c1de8495316bdd0dae9d51dda4bc1d3b7333e68075d9d63765
+2.0.8-x86_64-linux railties:>= 6.0.0|checksum:6281f282b67e1043c1e9d9b01b127e165f38594e66da6c9b47520bbca21063b7
+2.0.8 railties:>= 6.0.0|checksum:219cf4a5c7f6e6dff288f33ce17dc030ea2e56fe6fb81c20f2c9163c2b832cc3
+2.0.9-arm64-darwin railties:>= 6.0.0|checksum:58b612d63190b4e4683d4176f5c22dac8ea3e4428145a3c888475f020225c2b1
+2.0.9-x64-mingw-ucrt railties:>= 6.0.0|checksum:aae293c0f6882ada75b8d3481da645087fd301a33624c126293c15812baff98a
+2.0.9-x64-mingw32 railties:>= 6.0.0|checksum:0775b9a2096f7bf0a559c1088efd8c983eea41f51eff9dc1b19d179df162d726
+2.0.9-x86_64-darwin railties:>= 6.0.0|checksum:652596e01ead853daa78b5bf3f83dfdbae586c17024e0a5b1ffa26e1c846dad4
+2.0.9-x86_64-linux railties:>= 6.0.0|checksum:28553fcd41d7e2829eb56075c72a4a51c15b6f75fc6465c2089435a2cb9aea2f
+2.0.9 railties:>= 6.0.0|checksum:99a8b712d235e14d2245961225c5d2e6421a1921081caed92bacd4c060c51e87
+2.0.9-aarch64-linux railties:>= 6.0.0|checksum:d921960b93a2c1fd69e07e10719a76c194f178076cdff58bcbfaae518c29c90e
+2.0.10-aarch64-linux railties:>= 6.0.0|checksum:82c71c655b1b8fb1bf10d40ce87c937053f8d5287e57ced8d0a2c1da4d187e44
+2.0.10-arm64-darwin railties:>= 6.0.0|checksum:e470fd4562294858fc8f611efd15dae18b1c7c8f1db21e7a2313d16091a22776
+2.0.10-x64-mingw-ucrt railties:>= 6.0.0|checksum:7a469c32e88c0a9c24fc9cd1e1df12f516417d3b349a0edb31e5c1ce2538f14d
+2.0.10-x64-mingw32 railties:>= 6.0.0|checksum:cd711ca237c80bcfe269c55e142ffa48e6c09a7433a284b3d24078d2d5c381a1
+2.0.10-x86_64-darwin railties:>= 6.0.0|checksum:d9f3ec4039c98a6aef214ee7bb12d1c3b5cd074470f273f7e01d74014b5726da
+2.0.10-x86_64-linux railties:>= 6.0.0|checksum:40be38ffcb7887b6cac025f2f61764776c88944a5de0932d57b16f8ecd739902
+2.0.10 railties:>= 6.0.0|checksum:af2e81afb55e4704a8d99c7a088f3df024f7c6e9669aea177a94b0d4530b7fc2
+2.0.11-aarch64-linux railties:>= 6.0.0|checksum:ae56b4eb220b95ab4dc6b40e34d654d7377d744eff99d4253731221069343b65
+2.0.11-arm64-darwin railties:>= 6.0.0|checksum:bdc6ade851d22ac932a039d112b1be798a863793129eecf8b90efd58e4da0fd9
+2.0.11-x64-mingw-ucrt railties:>= 6.0.0|checksum:e19e8fa171635c24e6554c29fab126a550028bf9549e47c299fe6f75c0810a8b
+2.0.11-x64-mingw32 railties:>= 6.0.0|checksum:b2f6ecf45d84b21a26296ca071bc975eeaf7ebbd0eb06c651c047fc0f173d216
+2.0.11-x86_64-darwin railties:>= 6.0.0|checksum:ff6389383ee0940e34f4e2d7370b800c639437607a83b1cbcfc2c7b095a4d7f4
+2.0.11-x86_64-linux railties:>= 6.0.0|checksum:074180463b0b521d41caf899f63076b9ba0a3330011d330186a4a42d3bfedd2e
+2.0.11 railties:>= 6.0.0|checksum:faca6d456d4968f33793896661926dcb94b879c757c6c4dfd133b5a62c371d28
+2.0.12-aarch64-linux railties:>= 6.0.0|checksum:0c145dd26900bc1465782b86919de5a40ad5798277bff6dc572f90f011327a69
+2.0.12-arm64-darwin railties:>= 6.0.0|checksum:c5a1c818318bdce2935beb2ed22ba45509f34174d4a1c51eedade48b747a7b97
+2.0.12-x64-mingw-ucrt railties:>= 6.0.0|checksum:ab8b209928f42fbab8e7a1f0f583459592e9ed03c292cf4a9689b53ffd0c0676
+2.0.12-x64-mingw32 railties:>= 6.0.0|checksum:ed415410bac5ed32d4023b2341f326d2e160360a8c8858a313eeb8e67c48d892
+2.0.12-x86_64-darwin railties:>= 6.0.0|checksum:9edb373538f09def7baff4333e7943f29f92356c1fd0133074a0eb512b14c922
+2.0.12-x86_64-linux railties:>= 6.0.0|checksum:d67d9aa44353a180da25bc3a2a216185f87eb30750185d08f88f0f86d03bcffa
+2.0.12 railties:>= 6.0.0|checksum:ee20ee9a136f888ae0ff60fa1be0bbccc4acbdce73aa3281e5a67a390228c59f
+2.0.13-aarch64-linux railties:>= 6.0.0|checksum:888300b01fd03ae643592b1df84d60af3979d4e1e94803984c0a5a24010cfc93
+2.0.13-arm64-darwin railties:>= 6.0.0|checksum:cc2d2d32900c046aaaeebae2f33bff69047e0948c1e63da6433ce33d5e7a99cb
+2.0.13-x64-mingw-ucrt railties:>= 6.0.0|checksum:ac6310d25ad2183dc853a5f6eedf1fc5eb008d8d94f9db236aea6c36ba2153a9
+2.0.13-x64-mingw32 railties:>= 6.0.0|checksum:a82c313ffe404124849ee44a4ffdb27f2ab71e03fc9f8998f9129df1f1e6efd6
+2.0.13-x86_64-darwin railties:>= 6.0.0|checksum:6d2fefafbdd9cd4f2bc2cc8f625a36e21ad3536db9615f71734e6d36762504fb
+2.0.13-x86_64-linux railties:>= 6.0.0|checksum:0e1b07c07ad660df0c17c859f614251370c3e4ff5edb41a417bc6f88da3dcc5b
+2.0.13 railties:>= 6.0.0|checksum:564aaf36ac4a636f2972a275562e314d346bcc61b5548578df4d3c5d3a0d4ad1
+2.0.14-aarch64-linux railties:>= 6.0.0|checksum:81145c2c47daea98abd4fccffe6196910f1b3481cf8e918d132c7409d3bd0a1f
+2.0.14-arm64-darwin railties:>= 6.0.0|checksum:b3b91db82cfa25af86950d635ecd37c9901d87ba7025edf2559bed4ffdd41291
+2.0.14-x64-mingw32 railties:>= 6.0.0|checksum:b969ca87eaf99ba99e4ab4c73a9d1668220e18ed67f2a48d33026374ee0e1e3a
+2.0.14-x86_64-darwin railties:>= 6.0.0|checksum:1ab969da580cc7cfdaebbe8e0800ed6e8ead65ef2d96c9502aedcb9d10e0a671
+2.0.14-x86_64-linux railties:>= 6.0.0|checksum:abbcd359fcf8f7cf773ca830bd8cf391d5ead641dfc88baf240862d48eec6e60
+2.0.14 railties:>= 6.0.0|checksum:8097b93271c90975057f517b3dea623398e65a2fa936a27ca34766e558314410
+2.0.14-x64-mingw-ucrt railties:>= 6.0.0|checksum:41d2a26d4bd840f235dd183b4ef9a77612bf2d3026c73fcff087dfc68bae19f3
+2.0.15-aarch64-linux railties:>= 6.0.0|checksum:4ad4d833ed79624539581ab5513b5ae3d0abe89c20e79f6fc7918bef4e74d842
+2.0.15-arm64-darwin railties:>= 6.0.0|checksum:276fbf8dcf6d8be1652d09f442445c4328e7ce15263d3a6d1cf9f903c2a320bf
+2.0.15-x64-mingw-ucrt railties:>= 6.0.0|checksum:c243aa59cda828e4ab04e3994e980b66639d2c1803be8ca7a41c7911ab94a0a8
+2.0.15-x64-mingw32 railties:>= 6.0.0|checksum:a3f5d4428c657db40182add4b8c6302ebd61efea6c56b6829ddf02fa3c5888df
+2.0.15-x86_64-darwin railties:>= 6.0.0|checksum:8b5525f0cc0fe0cf8ca5c9c3af0e890829b0ec6a886247b47e97aa6f4637921a
+2.0.15-x86_64-linux railties:>= 6.0.0|checksum:53fa6b169ae934f45270a1b27a4060cc9dcfc50c14d5929b5c3bb817a53a06b0
+2.0.15 railties:>= 6.0.0|checksum:aa49dfae2748e3c8770f6fd91f6725721fa8c7fb03b5960acf8b3c04442636ee
+2.0.16-aarch64-linux railties:>= 6.0.0|checksum:2d14b928bbdc75bb871df33b7b70991d4bb8bc8f8295597ee1fdbcfdaa5e0c2c
+2.0.16-arm64-darwin railties:>= 6.0.0|checksum:6f5fffce63eb0c992f1568c8cc41e7e23cdc9908350fe82e131b95d400068f41
+2.0.16-x64-mingw-ucrt railties:>= 6.0.0|checksum:84f3fd053dea30615bd875c9f0aed1cb3cca62800d85cfaedef0c81c2765331f
+2.0.16-x64-mingw32 railties:>= 6.0.0|checksum:97826b3af09a9c101fd5491cd041cfb7f50e17d01f83485cb692f6304b962c7f
+2.0.16-x86_64-darwin railties:>= 6.0.0|checksum:c36fad0a5fb9a36933af832200ac5400c1af70891983e385db17f04c56c7064b
+2.0.16-x86_64-linux railties:>= 6.0.0|checksum:91cae16e13c58943912ccb16bad959d34360715be2ae896d83889e083ca7d6d7
+2.0.16 railties:>= 6.0.0|checksum:b055c344f43ea7bb624a509e26a5d582335d78fe266ba6955ba9ee8a240a98fd
+2.0.17-aarch64-linux railties:>= 6.0.0|checksum:f3d6471576b695a1ec936286b48b9d6c1cdf806abce18e5e3229ad92b0c72b0e
+2.0.17-arm-linux railties:>= 6.0.0|checksum:c5f446b1489b36c761265a1657a1d9f4b4b24dadb46ffdf5d145bc410562f5c5
+2.0.17-arm64-darwin railties:>= 6.0.0|checksum:86cbe5953f7ec012fa771425e401ac50c2632a1519254bd0e85292d43f1cb1c1
+2.0.17-x64-mingw-ucrt railties:>= 6.0.0|checksum:8913c278be1e83e99b64a0df12b152f87b82bef066ae0cd24eaff54e01b86f3c
+2.0.17-x64-mingw32 railties:>= 6.0.0|checksum:3d735e7afdf7c21b547a03181836b1f1dde29e1bdece6356965abc1ef4f4c404
+2.0.17-x86_64-darwin railties:>= 6.0.0|checksum:7cb727572f17c3f3f7b1fb449156cda1327fc23205f274e906b02682d29de0d2
+2.0.17-x86_64-linux railties:>= 6.0.0|checksum:651f179d0a6e5d5fe9d3ab74bc403db645c4130627cb39c3179b37d27507db55
+2.0.17 railties:>= 6.0.0|checksum:4ef8d55200ff9ff7ab036d0686cc9b6ac57d4fed5c972002320a27cc2f0d7d86
+2.0.18-aarch64-linux railties:>= 6.0.0|checksum:4dd101f88588927199839ba35244a9ca75b7e7e0bda02d8a11bbeac2d1ae3c63
+2.0.18-arm-linux railties:>= 6.0.0|checksum:20fc54ce99c7519165d4bc245c8d22f454891cfaa8ee9be1714e0c008b6d8678
+2.0.18-arm64-darwin railties:>= 6.0.0|checksum:0602d63cbecd204e369a22efbfb4cd321b9ab423c1788d15e07fe8ae483b145f
+2.0.18-x64-mingw-ucrt railties:>= 6.0.0|checksum:680fae8cef3fb2710b20cad2e7a657fe8c9612fbbfcfd34cf83254799b903d4e
+2.0.18-x64-mingw32 railties:>= 6.0.0|checksum:6e277cb02f9722555aeb56262cd4c3db95e926fc5737e9f2bf9d339e1f6e19fa
+2.0.18-x86_64-darwin railties:>= 6.0.0|checksum:8a90168ff039c3c30435a941f58eee07a0c2c3ea41c50a3ec0887840bc145ae9
+2.0.18-x86_64-linux railties:>= 6.0.0|checksum:b887acc6fb3db5b701585760c21c447ed4a44bd7ad52f77bd93c9776f034bce5
+2.0.18 railties:>= 6.0.0|checksum:da78c38d0f38d55df72513835f6d5b3547a90ad3b77f0ee4f925da846b455af2
+2.0.19-aarch64-linux railties:>= 6.0.0|checksum:8149748cc6d1aaa9e09036617e6f597484a0475c9cc3d8e9cee6ee4027f82b37
+2.0.19-arm-linux railties:>= 6.0.0|checksum:c1f38f3b5ea722b27390ea0a47b5c8f1945c47b98de051f12835041b467ce5c2
+2.0.19-arm64-darwin railties:>= 6.0.0|checksum:d821476ce5a3c3cbf16c20523041e426307aaf89f914f240f4def240588d4bb8
+2.0.19-x64-mingw-ucrt railties:>= 6.0.0|checksum:a335ca16dcfa17bdf3af4d138d99abe352ad032e824dd9c6efe4ed9807a9f366
+2.0.19-x64-mingw32 railties:>= 6.0.0|checksum:c103c2f57ae60c294b559ec271e29497a4ecba3ab645d0d66951a12bfe85afcf
+2.0.19-x86_64-darwin railties:>= 6.0.0|checksum:0da5a4ec25e369741c323a345950ef344c2fe5a9631df201f0b67d32338624f8
+2.0.19-x86_64-linux railties:>= 6.0.0|checksum:f568589cade1dad2ba442c866a4a903388ca3661aea53baab7264a22ec1d255f
+2.0.19 railties:>= 6.0.0|checksum:ad7ec5496ea5f878b8442f79cdfa7f243e065836d01e5be8f9b83a9f62f38d8c
+2.0.20-aarch64-linux railties:>= 6.0.0|checksum:c90244a64ca99408cf21706f25b64cdedadb4018626f7ebb153114d433739983
+2.0.20-arm-linux railties:>= 6.0.0|checksum:91da3b5e1ebb367d29ac853c5d65247886e4eb292ef65d3d6806b64588fd50b6
+2.0.20-arm64-darwin railties:>= 6.0.0|checksum:42396862ebffcafa1935760e39b6c96d272054e8386fd02d930ad42524b90986
+2.0.20-x64-mingw-ucrt railties:>= 6.0.0|checksum:9732478cc2b358e95662b2168d62422fe4681a3088f52affc4dab0dd938e1c13
+2.0.20-x64-mingw32 railties:>= 6.0.0|checksum:c168fa4810cddc799a482f6f00e929e3f854590974ef1c2390d0443b3625687c
+2.0.20-x86_64-darwin railties:>= 6.0.0|checksum:06b2f8f4ac63ca8ee6cf6ba6d87ca36e7d4cc47e721a446b9931e6c0d8c99a88
+2.0.20-x86_64-linux railties:>= 6.0.0|checksum:4350148d39f0db11fc5ce14644f7c81b825e8bc1e34fca8cc827a4ddc0977ce5
+2.0.20 railties:>= 6.0.0|checksum:3ae4ed315043f32ec6b8600f261bd8c9f03b8108a88da8d12caf1f6700139755
+2.0.21 railties:>= 6.0.0|checksum:d9f2ba2be96573fe589c5f00de875d941186e6ee4a502e7922073abdf06a9b6b
+2.0.21-x64-mingw32 railties:>= 6.0.0|checksum:c6e5c522496342e04016649c75abab9a1d9554f315ef0c2b5baecf209e4c7b3c
+2.0.21-x64-mingw-ucrt railties:>= 6.0.0|checksum:deb6d0683ad55e12009e1b7e1702924d74f048b9e6f64d24ae400598f439e10e
+2.0.21-x86_64-linux railties:>= 6.0.0|checksum:b2525117be81811bbd3ccd2e5cb48f1061f795c0d1898907385fd0ebb30dc2b7
+2.0.21-arm-linux railties:>= 6.0.0|checksum:aade0c84cab6676309e4e7f25f2cec04f1f5eb0f6e814769685c28bbcbe774be
+2.0.21-aarch64-linux railties:>= 6.0.0|checksum:e9fe4e045a1f51c7ecd15b400ed640c73c93846ba95805b7746adf17d8404f5a
+2.0.21-arm64-darwin railties:>= 6.0.0|checksum:6e522f8c82419fea422c329fe97e1f55a2108c07563d231e9b5635bc9c666a5b
+2.0.21-x86_64-darwin railties:>= 6.0.0|checksum:cca8b75b6322670ca1c3d792473df79f94ccd7aeb7594dcbd6ad1e6a3c13b8eb
+2.0.22 railties:>= 6.0.0|checksum:eb8dfb3011e0b7a27f4f489d84180e9b5aaa16ef164b3a0d5f612f5a0bc6f7ba
+2.0.22-aarch64-linux railties:>= 6.0.0|checksum:2933573afe3ea63a58ded8632b03a01ea62b8c5ff526788476fa21ed0ca94823
+2.0.22-arm-linux railties:>= 6.0.0|checksum:4bb9c1fd9aa9aa0dc873f6bfd0048223d083c784a98beea4f859d971c8a12e24
+2.0.22-arm64-darwin railties:>= 6.0.0|checksum:054448be5b7193ee16713b1a1759084f8b5de16f09d02e094c7ec7895a740f29
+2.0.22-x64-mingw-ucrt railties:>= 6.0.0|checksum:7a4e3bca04ab5a45fbbc6ce38372ba99032bc2bbeacadf3a9b59b73c50799c3c
+2.0.22-x64-mingw32 railties:>= 6.0.0|checksum:5b9ebe76b3564e5e4d8c7f73e6f1153741b65f488fd3a965f27cf59f80b51009
+2.0.22-x86_64-darwin railties:>= 6.0.0|checksum:b6240a4b44a07867cfa1ec232dcf2cfb309b0ce7ae11b4e4238de9b1fabf1d74
+2.0.22-x86_64-linux railties:>= 6.0.0|checksum:c58e4522b6232720e8db3973ef706482e27e1d1f761c9e1bd6cbfa104137233d
+2.0.23-aarch64-linux railties:>= 6.0.0|checksum:8dd32d7b6ce68b507ef4020200a15d368aafc273b62cc26cf307631ca5f781e7
+2.0.23-arm-linux railties:>= 6.0.0|checksum:39535e9499fef5a4ad8c7e665f66904c7640252dedd2dedc01f3572ab0b83785
+2.0.23-arm64-darwin railties:>= 6.0.0|checksum:6d77cf2d044aff935e1cf694a53f8b244e4208783310c2f1c877148fe4a75199
+2.0.23-x64-mingw-ucrt railties:>= 6.0.0|checksum:17d23851f5a0e6787cd95a75d339d829f7579564c2b4e60731b35b740787668a
+2.0.23-x64-mingw32 railties:>= 6.0.0|checksum:f5d0867ac84985e9761a5e37ffab1d4fb7324bfd2bfc38b6120d4045254092c5
+2.0.23-x86_64-darwin railties:>= 6.0.0|checksum:bbcbec67e6ef15dbf592359181c9004c787ac993d5711abd6892b5e716368e8d
+2.0.23-x86_64-linux railties:>= 6.0.0|checksum:15efde93a1590feb8ba51314d6ee22e3590a6a1fadf9494c32de8bea7fdb21bf
+2.0.23 railties:>= 6.0.0|checksum:a3a1aff808a62cacee3f66600154c4b4500b80593d9a90256b991aac287dc209
+2.0.24-aarch64-linux railties:>= 6.0.0|checksum:a96f16374669a7bd99ed9e73a18f7ec2881f8f6b6ae088913958f9ed79879b57
+2.0.24-arm-linux railties:>= 6.0.0|checksum:f386f3395ee577a97b4e6f560cc9e4c3bcdf77b6538ba9c0c99da648fb27864a
+2.0.24-arm64-darwin railties:>= 6.0.0|checksum:7383dcb79abb2f24d7c80e51a0b68fb2eca1937ca1f55e7a83f34eb138010f23
+2.0.24-x64-mingw-ucrt railties:>= 6.0.0|checksum:93675096edb9aebf875d3d6a208bf64ddb28f2d641ae8565bf5ef451b02d0354
+2.0.24-x64-mingw32 railties:>= 6.0.0|checksum:ccbdaeb7ae36d84ab4c4e662e24cc19d379352a03dd77d9f619823efd29f49d8
+2.0.24-x86_64-darwin railties:>= 6.0.0|checksum:69a5775e6751c45ce73d575b823faaa962b854092ae5947ec512d779d12dbec0
+2.0.24-x86_64-linux railties:>= 6.0.0|checksum:ecae7eb3b49d47f206aab746982922dfec02559b9d9439ae7320dfb7a74275b2
+2.0.24 railties:>= 6.0.0|checksum:00c5b4f3a3a915dd25e6dcbc45a93dac33e06a6d6f805baf2eedc9cae20fa6a7
+2.0.25-aarch64-linux railties:>= 6.0.0|checksum:96b1c2a8badb7c48ad504fbd1ec920186f0fb9b8459f41fdd495ccf6047af6b7
+2.0.25-arm-linux railties:>= 6.0.0|checksum:42c62b50e6a47216027606c4f44fef21ecca78092c299b39fed2bccb2ba3079f
+2.0.25-arm64-darwin railties:>= 6.0.0|checksum:794220dc9319f2f1c1422f340fa2cf8f2faca42f11dcb3cb050f6533bcd28a83
+2.0.25-x64-mingw-ucrt railties:>= 6.0.0|checksum:e28ee03c26ba9b387e5a07c3f23425ccd924f203a8c30648d678bdb2cc1e6a17
+2.0.25-x64-mingw32 railties:>= 6.0.0|checksum:9b0fb08f42ab0d32a0efd4258f55501268428a099d6f93ea1debb5729e51f9e2
+2.0.25-x86_64-darwin railties:>= 6.0.0|checksum:c8773f0fc8a6dd3787a457de23779dae33b28ac187283695de0966012bc92123
+2.0.25-x86_64-linux railties:>= 6.0.0|checksum:44c8127a5069e2a26afab6944bfee3642ef572f04c0e4e1d6f0f454a91170c13
+2.0.25 railties:>= 6.0.0|checksum:a4793150af16844a803677e23e4e8b05bf529723a402edf2166fd9e02afee9e3
+2.0.26-aarch64-linux railties:>= 6.0.0|checksum:b6f25480665b661a4b693641b1f0498e74fecb69a8f15734e4f163a47913974b
+2.0.26-arm-linux railties:>= 6.0.0|checksum:1ec5b8a0478de591cece9a8739c38796a89acfaf4b9aad27d6575579857d4701
+2.0.26-arm64-darwin railties:>= 6.0.0|checksum:6d0f99f19ce3c9f41e03ca1c711a0d0a71e68a16fdcd53533988cce11c0d3765
+2.0.26-x64-mingw-ucrt railties:>= 6.0.0|checksum:96a8a805c0c8a72a6cc1ee00e528a2244031f87596de5c628ee98b841c9549f4
+2.0.26-x64-mingw32 railties:>= 6.0.0|checksum:5aa9b666b3526adbd9b8798effafc1a6bd87c4e45c5c7a658d546bf69a4717cb
+2.0.26-x86_64-darwin railties:>= 6.0.0|checksum:51565cdc0d512dda6b89d99a56bad878b4d0e12cdfaa477d29b22149584ad152
+2.0.26-x86_64-linux railties:>= 6.0.0|checksum:0996470838db5d2b9ba850ef07e81118c14899a0be44ce7482960a1ebee5b0a9
+2.0.26 railties:>= 6.0.0|checksum:02084c3029c775c8fb9546d26d584d711cb6361c6ee3b828c7fe48e8c49ca2f4
+2.0.27-aarch64-linux railties:>= 6.0.0|checksum:3f252e49801e0c41abfdfaf85eac22b7b7ba79c7c0118f081ed8a3980651d7b2
+2.0.27-arm-linux railties:>= 6.0.0|checksum:58a37c36e1ec54943be8100f311d9e077b3d60d9ae61d90e4cdd59c64a3abd23
+2.0.27-arm64-darwin railties:>= 6.0.0|checksum:dd56b565cf67785d32310cd2d12e2bd6d5ea57bb06ccd9705fcd7ffe98714a17
+2.0.27-x64-mingw-ucrt railties:>= 6.0.0|checksum:958b268c4bd736093739e0883270214ddd9780f0dc4c9f0d67cc7382a8dbb101
+2.0.27-x64-mingw32 railties:>= 6.0.0|checksum:fd753e32128c46b2eff4c60676cbf47789d4ae7879b8a4e30f5ce2fa706f386d
+2.0.27-x86_64-darwin railties:>= 6.0.0|checksum:434f15e6743cb80bd037ff05ae9ad3b233badc0985b8e5d36382a0d6d6b2f9b6
+2.0.27-x86_64-linux railties:>= 6.0.0|checksum:e7f651197faa8ab31015997e4d4c197df6c306caba20cb9039d3d9dad30880a5
+2.0.27 railties:>= 6.0.0|checksum:213345a3e5249b7712f191bb07263b1593eb59e3ac690a0b83fea8be9e26ae4a
+2.0.28-aarch64-linux railties:>= 6.0.0|checksum:716838f430c1b05698fb1712939e9b6eab8f4c0cefd7f7385e17316dbb29492a
+2.0.28-arm-linux railties:>= 6.0.0|checksum:f4e99bf703335c8f9af0973972ca93515704c56182c3d7b6fda8d7f3dc2c39b4
+2.0.28-arm64-darwin railties:>= 6.0.0|checksum:61a49eef5c567c604e8ac0619f1ffb12a9584f741aa6949c0bbdfaee35271410
+2.0.28-x64-mingw-ucrt railties:>= 6.0.0|checksum:985c68c9d384bda5b3569fad8ec19ed881c15eea67e0da432b66b14b9809f7d9
+2.0.28-x64-mingw32 railties:>= 6.0.0|checksum:93c749a1c59517f0a4f0fa7ab14b320e9d23b27bfc9afb315af6f863b27d5ac3
+2.0.28-x86_64-darwin railties:>= 6.0.0|checksum:57b48623d093d8364aa12ef6d9b81547a0bdcb4cda94752f52ab2ff7dee9de95
+2.0.28-x86_64-linux railties:>= 6.0.0|checksum:c4b8a3284a3138b27e57bfb7fb99306a10ad3b3cfb048f6ff3169cda0f5eeb56
+2.0.28 railties:>= 6.0.0|checksum:14fd59ed30b2b8aa252464d3707a85def844217f88108b667210fe3efb5bd5da
+2.0.29-aarch64-linux railties:>= 6.0.0|checksum:b5f486ff3a07e0cd25a9008f01546e031e7ec5c915b4867cb6627e6e0708d488
+2.0.29-arm-linux railties:>= 6.0.0|checksum:e6c5de95d248b71a99aba683749deb685a95303b3092641da144b0351f3e2544
+2.0.29-arm64-darwin railties:>= 6.0.0|checksum:4134d791bf0cf6ba490ad5c0af0863cd394ca8b46e1bb8d7eecb41cec098418a
+2.0.29-x64-mingw-ucrt railties:>= 6.0.0|checksum:03d57459965da241cba4c8fb1e6fbb42ccb6ef1503d265fb5c923f4283ce7687
+2.0.29-x64-mingw32 railties:>= 6.0.0|checksum:2f638290647df87234b82eada4654d853a0a24041b341ca53c5178914dd91eac
+2.0.29-x86_64-darwin railties:>= 6.0.0|checksum:847de0a35766de778a020750bfb8d9fe943e6584a7e936b4191699cb30a36b4a
+2.0.29-x86_64-linux railties:>= 6.0.0|checksum:d211babe2bc91cd4b5736f992ccdd1478a0ab6d568ab52cb37a7cad08cdec3bb
+2.0.29 railties:>= 6.0.0|checksum:083a8a7c762f2b480d2a5640ce68910ed7e0a0377bf31c6522fd2f53b7f46829
+2.0.30-aarch64-linux railties:>= 6.0.0|checksum:a0cb287f2f6fb4d60bcc70b85b0dc709eaf9124820bdf36aea37bdf8ba0f2fad
+2.0.30-arm-linux railties:>= 6.0.0|checksum:c191b5bde7e30f6001997d5ea8aafc5e396de02aafaf469d8af0385f83ff35cf
+2.0.30-arm64-darwin railties:>= 6.0.0|checksum:593095ae27818614092af94fea5db3ee4d4a11fa9a657915cf0b14160d7ac8b5
+2.0.30-x64-mingw-ucrt railties:>= 6.0.0|checksum:cea5a4aeab76b279f90b37135190e71af61eec22118d3a018db95a8a2fe22005
+2.0.30-x64-mingw32 railties:>= 6.0.0|checksum:43189a3454930be2d9857a867bc4aebaf41232c9dbcbf0618f3e6d6ec69449c0
+2.0.30-x86_64-darwin railties:>= 6.0.0|checksum:534693e364e894f853f1b6b46a57eb3bb3ec95a8f0726c45ed7668cdb1cc650e
+2.0.30-x86_64-linux railties:>= 6.0.0|checksum:b70988749d1001b6710b37efc155ae2f63a9d10efa37a6416eeaf10e453b8b6c
+2.0.30 railties:>= 6.0.0|checksum:04a177c9015819640eef50083f886fb1bbe2e62362b691e1d906c56130f5484d
+2.0.31-aarch64-linux railties:>= 6.0.0|checksum:7190b512431ae08cca634e0c7e15e90d9c179b62c43c341abc7d7e4bb9cf5591
+2.0.31-arm-linux railties:>= 6.0.0|checksum:3dd9e290f511946202fcf5551370832d29774c991bd7cb9c13416e76fd4db6a1
+2.0.31-arm64-darwin railties:>= 6.0.0|checksum:63ff7c693417150cc806056db94f5f3f1df565fa8bc2c3fdd01b05341726adae
+2.0.31-x64-mingw-ucrt railties:>= 6.0.0|checksum:877255a16c40e2ec110d07e348cd67a2dd9f05a1f11daf025570495282c8b010
+2.0.31-x64-mingw32 railties:>= 6.0.0|checksum:90b977da30eed5ec09f9dacdb3b99bc47a7a81b0908cf0aa7b712bfc746369e9
+2.0.31-x86_64-darwin railties:>= 6.0.0|checksum:6a2051a0380fe2ab688e4757cfd37f090ec95bb04173f8a71050aaacb2312421
+2.0.31-x86_64-linux railties:>= 6.0.0|checksum:331675cbcb71b1ee0ca5694eed184ba668658876694386bd468d93b8fa9e7d34
+2.0.31 railties:>= 6.0.0|checksum:54ed1c682d66d1d165e489f7eca8b5e8eebfd0e7f7c319198b27bbe199c2a3bc
+2.0.32-aarch64-linux railties:>= 6.0.0|checksum:8ad2d425e16268725faea6645ffe92d7d4cbbe9881b015083e3426c930ab25e6,rubygems:>= 3.2.0
+2.0.32-arm-linux railties:>= 6.0.0|checksum:e13819fd393ce3c7f53aa0032ed65beb8834f254048d89dc477fe061c3f6c6f8,rubygems:>= 3.2.0
+2.0.32-arm64-darwin railties:>= 6.0.0|checksum:7e688e2e1c98dc33b03ff8aff630c510092c643c8e5914dbc3c0cfa0ae0cae94,rubygems:>= 3.2.0
+2.0.32-x64-mingw-ucrt railties:>= 6.0.0|checksum:d4e07be637ecfe3fbb23e9cd9a45b7fca26f5921e5a059c6ede3c30a2bc4f1e6,rubygems:>= 3.2.0
+2.0.32-x64-mingw32 railties:>= 6.0.0|checksum:3a300fa151f9b90f2c66f020ebc5a17530d55da2ba6ca6a5415cc6f0b0f99955,rubygems:>= 3.2.0
+2.0.32-x86_64-darwin railties:>= 6.0.0|checksum:fdf004a3691e0938882a8a9d15e633247e19db874a5ebb14a593edfd09e63250,rubygems:>= 3.2.0
+2.0.32-x86_64-linux railties:>= 6.0.0|checksum:1901b94c9e081fd85d319fc4527b49108782068488f1ee61a6713bf7949ff3f1,rubygems:>= 3.2.0
+2.0.32 railties:>= 6.0.0|checksum:34a502429fc10d221b5f1f719082e0221411a80e6dd111b9657106b22fb3e856,rubygems:>= 3.2.0
+2.0.33-aarch64-linux railties:>= 6.0.0|checksum:ab8f55112e1652db97034e3f325f2d10edd3211152f316ad9f41d258389bf17d,rubygems:>= 3.2.0
+2.0.33-arm-linux railties:>= 6.0.0|checksum:3e08861a10f92148f0fe3162515d8dc9435e12bc221accaf9ad4b980d2e34c3b,rubygems:>= 3.2.0
+2.0.33 railties:>= 6.0.0|checksum:27541d2091a3cdb67653bb0e89c6d881c6ca55f92434c41109c172d633f01ea6,rubygems:>= 3.2.0
+2.0.33-arm64-darwin railties:>= 6.0.0|checksum:a966eb0d637ff9b2000181794845c1e73fadbee6785420b9d6c1684467a73efe,rubygems:>= 3.2.0
+2.0.33-x64-mingw-ucrt railties:>= 6.0.0|checksum:1613153de892ab41ad5ac5ee727c19a49e742fe12feec7aff546e457a2f699f2,rubygems:>= 3.2.0
+2.0.33-x64-mingw32 railties:>= 6.0.0|checksum:4e3324bbf3fa1b648560f42ec332de33d8787860dfb836b392aa9b16b84490e8,rubygems:>= 3.2.0
+2.0.33-x86_64-darwin railties:>= 6.0.0|checksum:eaa1453eb8bdece8cad81f2c3b49d5b1252e5686893f373f7a6b7def8d0e1867,rubygems:>= 3.2.0
+2.0.33-x86_64-linux railties:>= 6.0.0|checksum:873a6e5683755919c5b9e0784fa56f5da42d1dbb5ec8e8c1d6c7a18081965b77,rubygems:>= 3.2.0
+2.1.0-aarch64-linux railties:>= 6.0.0|checksum:c8e2bbdc3cd0152fae0c6a3ac2fffbcbeaf9726b83a32f8a8f5feb5cb1fe1ced,rubygems:>= 3.2.0
+2.1.0-arm-linux railties:>= 6.0.0|checksum:50d8b2e3ead58f5831b5507174135004396e0b7e74dc1bab33772a536f5e98ed,rubygems:>= 3.2.0
+2.1.0-arm64-darwin railties:>= 6.0.0|checksum:787a651cb797384fe1d0d924df8d0ee2df80ccac6e916c91dbb0315d3713a04f,rubygems:>= 3.2.0
+2.1.0-x64-mingw-ucrt railties:>= 6.0.0|checksum:8733a69c35166f3796b7fce11e8d2c0cfae70a303df16ad60c9761f6a977d031,rubygems:>= 3.2.0
+2.1.0-x64-mingw32 railties:>= 6.0.0|checksum:adc6fff9a9f87e80d39feb79dbdb76acb689fc63f7dc8dee3266fe53de09c680,rubygems:>= 3.2.0
+2.1.0-x86_64-darwin railties:>= 6.0.0|checksum:1a44267002e41abbc55d8e76d100084b1f62452d688451abf6227d3f45b9ce71,rubygems:>= 3.2.0
+2.1.0-x86_64-linux railties:>= 6.0.0|checksum:7bc4ee27b198164c8a57457f85c26a1d4998c636532e2cc0db2b79a13d7f0a76,rubygems:>= 3.2.0
+2.1.0 railties:>= 6.0.0|checksum:9badde83d85d3437073640be26d6880e6e627eed60e7f8cfefa81e28c177d62b,rubygems:>= 3.2.0
+2.2.0-aarch64-linux railties:>= 6.0.0|checksum:1c3dc87eb7ad4ed17a02b2430bca770a71678635748d3427c568ad95b41788ea,rubygems:>= 3.2.0
+2.2.0-arm-linux railties:>= 6.0.0|checksum:7e3f985aaaa418b785d11f439fa8eb9afe7cc430c8b39edada543ce95a546805,rubygems:>= 3.2.0
+2.2.0-arm64-darwin railties:>= 6.0.0|checksum:0514d131a977c62b68f462322c7a92ded803b3ddcbb40d59967a50b7d74b788b,rubygems:>= 3.2.0
+2.2.0-x64-mingw-ucrt railties:>= 6.0.0|checksum:b58e0ea1616af98cf8db5e0e66b455d58df45b8f7f559a10cbeeafe295bce1a0,rubygems:>= 3.2.0
+2.2.0-x64-mingw32 railties:>= 6.0.0|checksum:e86c344abd3011e7cda1d6bde55b47cc9780470806e08fdc6e3b9c449d0004bf,rubygems:>= 3.2.0
+2.2.0-x86_64-darwin railties:>= 6.0.0|checksum:802b4e5ff703b901b02d9e7c03e78be424d2b768708ff0eec8f1a629b4ffc1a0,rubygems:>= 3.2.0
+2.2.0-x86_64-linux railties:>= 6.0.0|checksum:3bb2a174f8dbdeae585cd49f061f7ecd400a6b57e9dc6f0b784501adad92ce16,rubygems:>= 3.2.0
+2.2.0 railties:>= 6.0.0|checksum:19423012e78e211b609b49c20c0f1381f8d4198abebda72fbfd2336098a889e0,rubygems:>= 3.2.0
+2.2.1-aarch64-linux railties:>= 6.0.0|checksum:6b1077c4928fada70fb7ec5a211be4c504954b9b11c7b60112848850ac98bbca,rubygems:>= 3.2.0
+2.2.1-arm-linux railties:>= 6.0.0|checksum:9460a780267b0599596fc4bd657fb590acab3327eab783fe8dae9beac761d8b7,rubygems:>= 3.2.0
+2.2.1-arm64-darwin railties:>= 6.0.0|checksum:7e90e5cad28d0a89407edc76d4a0b75a44f0401098ad481eb330e49f7fae05f9,rubygems:>= 3.2.0
+2.2.1-x64-mingw-ucrt railties:>= 6.0.0|checksum:a94aad3f998ed6af8773103a1b4157f32046f487274b64a80d113b55bd4cd84b,rubygems:>= 3.2.0
+2.2.1-x64-mingw32 railties:>= 6.0.0|checksum:57d1a45c89c460d304816f28d6208fee078d8de0a749721bca2481e20fbc61c7,rubygems:>= 3.2.0
+2.2.1-x86_64-darwin railties:>= 6.0.0|checksum:adff8087b009f858a600a9b7dbc4c942be6ed66909be09ccd69f28e3cab62d21,rubygems:>= 3.2.0
+2.2.1-x86_64-linux railties:>= 6.0.0|checksum:14009685e7722f9bf1b275cd99bb47765d67689868e79b384f5c22e00bf5d07d,rubygems:>= 3.2.0
+2.2.1 railties:>= 6.0.0|checksum:2842e74ef30e9d7032444fd7ae26bfd70d8a4d0d597abed1a9ff3a921b4673c8,rubygems:>= 3.2.0
+2.3.0-aarch64-linux railties:>= 6.0.0|checksum:eebaba5e40096a33b77931411784b484793d5da5da5542d3ff21aca86d01abb7,rubygems:>= 3.2.0
+2.3.0-arm-linux railties:>= 6.0.0|checksum:65ac55b832be5665b88e54b802bd64d25ef9d2ea383208a3da3d75269e7732b9,rubygems:>= 3.2.0
+2.3.0-arm64-darwin railties:>= 6.0.0|checksum:407c6be2a91ff15c42315c42f0510ea139dfb0985660f78ae35d58c7186a9846,rubygems:>= 3.2.0
+2.3.0-x64-mingw-ucrt railties:>= 6.0.0|checksum:e2c7d31e85b10f4a50c988782776c812ebe29511006f7d1f65f82e7a9574d076,rubygems:>= 3.2.0
+2.3.0-x64-mingw32 railties:>= 6.0.0|checksum:c3b6843f488d9cefd3692c4997a22f1e17ca4fe4d0697daa3bcf062187a2d9f4,rubygems:>= 3.2.0
+2.3.0-x86_64-darwin railties:>= 6.0.0|checksum:3a75c1615f1e23ab7e087a115ab9d6b3975572a0e4eff8aacc8bf65710bd0312,rubygems:>= 3.2.0
+2.3.0-x86_64-linux railties:>= 6.0.0|checksum:6968316d8274130533704aea8d2dd50f6ece769a468340fddd17a0ebf286f3c9,rubygems:>= 3.2.0
+2.3.0 railties:>= 6.0.0|checksum:eb194b760eb637f01490f8ad30147d93f402346babfc6eeac04039cff8169ad9,rubygems:>= 3.2.0
+2.4.0-aarch64-linux railties:>= 6.0.0|checksum:879c5ce5fd0630da0ebff0793c5f4c6099c870710150c5bd794adf18bc782af7,rubygems:>= 3.2.0
+2.4.0-arm-linux railties:>= 6.0.0|checksum:2e3ca759198592649264616c9e540b609eefd450cb108e17b2271f8631db58db,rubygems:>= 3.2.0
+2.4.0-arm64-darwin railties:>= 6.0.0|checksum:81f1561452510b6510f8a6f2c8a2e66f958ade332e38b0aba9da3de10848c42a,rubygems:>= 3.2.0
+2.4.0-x64-mingw-ucrt railties:>= 6.0.0|checksum:fefb8e0a4c998cb53f3327b7455948454336adfabfa24d900a1ad00472e2d498,rubygems:>= 3.2.0
+2.4.0-x64-mingw32 railties:>= 6.0.0|checksum:bd0ad07760f23b2c60c0316c472cc7904f22e0c2152dc71ef86a78f47c6056b8,rubygems:>= 3.2.0
+2.4.0-x86_64-darwin railties:>= 6.0.0|checksum:15afc54ce87e68ea2d5ad075c0938cdb39f3902a60de77803c41e0e229c5f489,rubygems:>= 3.2.0
+2.4.0-x86_64-linux railties:>= 6.0.0|checksum:4167777256c72c5ce49b467617e2ed0968f2265de0cbef3c2f02c6f505ae9c05,rubygems:>= 3.2.0
+2.4.0 railties:>= 6.0.0|checksum:145389f1f4eb1ffd4a55e52dbc9b1b81b8cc7029840fc7ece199ca48c27230d3,rubygems:>= 3.2.0
+2.4.1-aarch64-linux railties:>= 6.0.0|checksum:8a7b975ac1afcf5501cd2b8ca371cbdac60745e78c4fbfbb3089eb4638d4a868,rubygems:>= 3.2.0
+2.4.1-arm-linux railties:>= 6.0.0|checksum:5a249251c74272815bba67258ff9e71c8650abd57ee759dd86cc4fbfe5493cbc,rubygems:>= 3.2.0
+2.4.1-arm64-darwin railties:>= 6.0.0|checksum:e619a91c1d1b569c721795811df60446f202e49e07520db6dcd41467d254a5ee,rubygems:>= 3.2.0
+2.4.1-x64-mingw-ucrt railties:>= 6.0.0|checksum:db5d56d858785e909ab4ecc9e3c66b4d4621f64229c6f794f8dbf19bfd3658ae,rubygems:>= 3.2.0
+2.4.1-x64-mingw32 railties:>= 6.0.0|checksum:09ac5e411f3092f4ab85fe03273e94e75059e5b95355b17e074a3b68e9cd77f2,rubygems:>= 3.2.0
+2.4.1-x86_64-darwin railties:>= 6.0.0|checksum:25e6e89e83a533c95e1579afd9067551ce091c02928385b876f6fa3576bc6b1d,rubygems:>= 3.2.0
+2.4.1-x86_64-linux railties:>= 6.0.0|checksum:067a06bd9f4fdb13796e1f127a469da4baa2062c38a5f2e73d7bd45631addeff,rubygems:>= 3.2.0
+2.4.1 railties:>= 6.0.0|checksum:01d86f13a611f90b882c92852406f5dd96b20be53a9b3256f41cb84e519c5936,rubygems:>= 3.2.0
+2.5.0-aarch64-linux railties:>= 6.0.0|checksum:edfe123d0ea0629f1bb43ccf86b8310ba407d536d82016eb920d095999d9e184,rubygems:>= 3.2.0
+2.5.0-arm-linux railties:>= 6.0.0|checksum:d0fc216e217764f2a2a2c0c02352f9634bdd5892fb395f10c7f2cbebc2773f7c,rubygems:>= 3.2.0
+2.5.0-arm64-darwin railties:>= 6.0.0|checksum:48bb349cf8be094d63a74388746db1c575c10eafa0b30d905091d73cff127505,rubygems:>= 3.2.0
+2.5.0-x64-mingw-ucrt railties:>= 6.0.0|checksum:f0bce5ea8669bb7686d7314f35234e3c8609d33593f4a6352aed950de9ddfe91,rubygems:>= 3.2.0
+2.5.0-x64-mingw32 railties:>= 6.0.0|checksum:7aa84cb41f79bc32427fd03ed3af2275d5d1bb7543a8133a13085114114db837,rubygems:>= 3.2.0
+2.5.0-x86_64-darwin railties:>= 6.0.0|checksum:41fcafa63bb6673aa66be9902f203cf0f38270b1d9002611e8d255cf3d0129b4,rubygems:>= 3.2.0
+2.5.0-x86_64-linux railties:>= 6.0.0|checksum:fe210c4cd6e059fdee1414263dd7c1036a5b6831426913b391504a7e47617413,rubygems:>= 3.2.0
+2.5.0 railties:>= 6.0.0|checksum:e0dd8f40abb8ed2f2694998c7b4078f2be6240a7c5c514d2894c9e2a7e633e4c,rubygems:>= 3.2.0
+2.6.0-aarch64-linux railties:>= 7.0.0|checksum:b3b3b7380a23398520263d6c8085ebc1890bc181401e6a691d56b556e7bfccad,rubygems:>= 3.2.0
+2.6.0-arm-linux railties:>= 7.0.0|checksum:03a0eb443e360ac72d2d1b22eb9fe42dff13a7ddefda7d9d8fcad29e456e19af,rubygems:>= 3.2.0
+2.6.0-arm64-darwin railties:>= 7.0.0|checksum:f846a0f61a9b8018ec3ed90f3aee6078997b5c30e8cbaa970a406b927323ed8e,rubygems:>= 3.2.0
+2.6.0-x64-mingw-ucrt railties:>= 7.0.0|checksum:07f6e77b6df9449b647206214a997d22d6343b6d36cafe651cfae7eae3a02a67,rubygems:>= 3.2.0
+2.6.0-x64-mingw32 railties:>= 7.0.0|checksum:5a5cdf7584ffa8eed7673c959e995790488d5fe74f1a0ae73bcbd9aa2b036230,rubygems:>= 3.2.0
+2.6.0-x86_64-darwin railties:>= 7.0.0|checksum:bbff5884b71bd40bb2cb992b53bd1ff1b178dd495c8af59f7baaeee71fe23ebe,rubygems:>= 3.2.0
+2.6.0-x86_64-linux railties:>= 7.0.0|checksum:6504effac8d5dde120670044a2dfec92ee850866210b01a02ac4cbaeddc33c5e,rubygems:>= 3.2.0
+2.6.0 railties:>= 7.0.0|checksum:1450c61d0853552017932231e37ee96539f70ac9c9ae9fcd1514915336d5365a,rubygems:>= 3.2.0
+2.6.1-aarch64-linux railties:>= 7.0.0|checksum:3686c4fa93c1c51ea5ed7597b532fe30cf46c6de90952f0838505c18ef97e8ad,rubygems:>= 3.2.0
+2.6.1-arm-linux railties:>= 7.0.0|checksum:30e9414ae91d6acaf91ab98d22158ef41344a309ce9199a3295b361aab1a2ae8,rubygems:>= 3.2.0
+2.6.1-arm64-darwin railties:>= 7.0.0|checksum:bbfad2d49bd72aacebe42905ec6899c5d7083d8bd36d225cbea4cb8e9d31dfb0,rubygems:>= 3.2.0
+2.6.1-x64-mingw-ucrt railties:>= 7.0.0|checksum:e7d272a3d26aa401faf31bdc9ddf2b4d357116c9a9b08d7b809574302b8ba80d,rubygems:>= 3.2.0
+2.6.1-x64-mingw32 railties:>= 7.0.0|checksum:45593ce00bcd2153d70fe859652e0d8b1a7922fc230c5af657b7407a2b57095e,rubygems:>= 3.2.0
+2.6.1-x86_64-darwin railties:>= 7.0.0|checksum:564bd5e954324d082f9b8e1f2873855bd91829f90dc45a58af737f2f043d3f90,rubygems:>= 3.2.0
+2.6.1-x86_64-linux railties:>= 7.0.0|checksum:aa10378c3e0919348ccdced4e033e3df5067598c75e080098a56179f3ea86a97,rubygems:>= 3.2.0
+2.6.1 railties:>= 7.0.0|checksum:60e66e243761402f9ce834132f59dd6c08b6fea5987e321bd9886dd0b0ce04ac,rubygems:>= 3.2.0
+2.6.2-aarch64-linux railties:>= 7.0.0|checksum:24a0648d78276158351b09712a035e79437483045f8693c729011e187e6b2519,rubygems:>= 3.2.0
+2.6.2-arm-linux railties:>= 7.0.0|checksum:963943d6ebff4a3a640d97ec1e7df601c9a4d7628eec35a8d5021a307ab44910,rubygems:>= 3.2.0
+2.6.2-arm64-darwin railties:>= 7.0.0|checksum:fb783fca7126e2298819d3ffc7c4497ee436156b59998918023a4243747e1c45,rubygems:>= 3.2.0
+2.6.2-x64-mingw-ucrt railties:>= 7.0.0|checksum:7fa0976f04950e60cbf198991e3fd84c243502880eaeb67a5c97b29e69c7c57c,rubygems:>= 3.2.0
+2.6.2-x64-mingw32 railties:>= 7.0.0|checksum:da187455be5e7871b99f3bd568690ef6ff27fdfae0d449fe24c98ee7062e7db7,rubygems:>= 3.2.0
+2.6.2-x86_64-darwin railties:>= 7.0.0|checksum:e5e24a1dc46fe73625b0a69efa714d7cd92e83b9cb3c992c3c46cb4c276acd69,rubygems:>= 3.2.0
+2.6.2-x86_64-linux railties:>= 7.0.0|checksum:e8259f4c3a25509bb17c95dd69377a221283477d126f07ea68aed5962b1f62b3,rubygems:>= 3.2.0
+2.6.2 railties:>= 7.0.0|checksum:d760c06aa6ea5f44c61b6e74bc5c98b0746d432ef0178953ca076d312f356166,rubygems:>= 3.2.0
+2.6.3-aarch64-linux railties:>= 7.0.0|checksum:70ae18b74229f436a19f17c4cdf9f31f58023217d51e8eea1505072945c20818,rubygems:>= 3.2.0
+2.6.3-arm-linux railties:>= 7.0.0|checksum:c9ce2fbc0a3a83b327774036a0dcaeb5c1fe46de4611ab3700698e2c8405ec5d,rubygems:>= 3.2.0
+2.6.3-arm64-darwin railties:>= 7.0.0|checksum:9478b420b046497ed728e3f07f49089cf58d8386e2b6d4d2eb6943c4b63c1724,rubygems:>= 3.2.0
+2.6.3-x64-mingw-ucrt railties:>= 7.0.0|checksum:cb10c38fc199cfe3266be453cab68fb12cd8b5be617003bf1af111d00861746b,rubygems:>= 3.2.0
+2.6.3-x64-mingw32 railties:>= 7.0.0|checksum:efedcde1f50e9b69e3d3cf019a6039521f4629fd58d4d7639c97fe94cf6e2322,rubygems:>= 3.2.0
+2.6.3-x86_64-darwin railties:>= 7.0.0|checksum:8cf3c05726ea1b3985a8a8f8a9b04c13d0f9729dcf125e8d65c176e4ca51197c,rubygems:>= 3.2.0
+2.6.3-x86_64-linux railties:>= 7.0.0|checksum:1348a7e4b1ea6961aaa1bde95d4330d666080823ce3a02e9bf2aabff16122fad,rubygems:>= 3.2.0
+2.6.3 railties:>= 7.0.0|checksum:63a5f3d6f92d0784024b352ab472f0bb85047081c2b51e2679fce558721bb6a6,rubygems:>= 3.2.0
+2.6.4-aarch64-linux railties:>= 7.0.0|checksum:328a470dc6bd7323b91dca262508e9fce12e51c3f41ff29ecab4954db41636b9,rubygems:>= 3.2.0
+2.6.4-arm-linux railties:>= 7.0.0|checksum:262d20a1bb9116eaa1f3f5c07dde437e89752d7756da11cf82bf1b30ead3231f,rubygems:>= 3.2.0
+2.6.4-arm64-darwin railties:>= 7.0.0|checksum:a3031550fe51f00689c5c1c86ba06a956fabfdf661d8e3e122dba7f1851517a2,rubygems:>= 3.2.0
+2.6.4-x64-mingw-ucrt railties:>= 7.0.0|checksum:febbbf66c495a7c16acfe53c4f59519e7cebc8a38c8aedc1eb19ba45a92ce778,rubygems:>= 3.2.0
+2.6.4-x64-mingw32 railties:>= 7.0.0|checksum:605ceddb218a4eb282349e2fc44896709f006e8ba87656cfd825a73a5a38f757,rubygems:>= 3.2.0
+2.6.4-x86_64-darwin railties:>= 7.0.0|checksum:94524c19b90ac08b5e27082cb3e2aa13dd2a5c4931a2ef6b74edeb750c4105b3,rubygems:>= 3.2.0
+2.6.4-x86_64-linux railties:>= 7.0.0|checksum:6c8e298173c659c379a6318cf4aad49d7a9a15f1d35c9cf4638b7dab9306b059,rubygems:>= 3.2.0
+2.6.4 railties:>= 7.0.0|checksum:175cd2009a6a27b10d16772c072c44974e03a6516e58beb37f185d6bfcd7ebe5,rubygems:>= 3.2.0
+2.6.5-aarch64-linux railties:>= 7.0.0|checksum:b090eda21fc9d4e540f6dd1d7029a371be31e7fb3e6045939320d156a9eb7465,rubygems:>= 3.2.0
+2.6.5-arm-linux railties:>= 7.0.0|checksum:f759dedcb747b10560f90c348ef1b0c6f20352a393c13cda4a36696c588efbfc,rubygems:>= 3.2.0
+2.6.5-arm64-darwin railties:>= 7.0.0|checksum:a3658eb8ff93129dbe90747ab34a2d91777e253da4c3a0bc7520aea20803edd4,rubygems:>= 3.2.0
+2.6.5-x64-mingw-ucrt railties:>= 7.0.0|checksum:06b6dabeed601820ee1a4767b48f82bf5686e4ffd4d6f52e9152033fdb36a172,rubygems:>= 3.2.0
+2.6.5-x64-mingw32 railties:>= 7.0.0|checksum:c089907b732ebb5919b77dd79d58ef139938230d6d38075857d4c05256353d8b,rubygems:>= 3.2.0
+2.6.5-x86_64-darwin railties:>= 7.0.0|checksum:5aee5bd34c8dbead7c220d527e48a04535256ccc1afff37573fc8b9b328f4de6,rubygems:>= 3.2.0
+2.6.5-x86_64-linux railties:>= 7.0.0|checksum:103c5b0b935d933490e6235ecc0f22c563e092426f048ddde920eabde52b4789,rubygems:>= 3.2.0
+2.6.5 railties:>= 7.0.0|checksum:4548b1c7232ca5fbebac875181354948fa8540e213555b997c55b87ded332f51,rubygems:>= 3.2.0
+2.7.0-aarch64-linux railties:>= 7.0.0|checksum:7a61f46a605c32b2fb34f741c20dd4b9c48d48284d1c953d325e2217f799605d,rubygems:>= 3.2.0
+2.7.0-arm-linux railties:>= 7.0.0|checksum:897517ec3c007be66a2489bcac2f4b79d3bbb572fd169b655e827168d79dce96,rubygems:>= 3.2.0
+2.7.0-arm64-darwin railties:>= 7.0.0|checksum:e36e0a74587e60578dce642ea765d4dcc7fd0bbf8840acadd295aa6e3b6b9084,rubygems:>= 3.2.0
+2.7.0-x64-mingw-ucrt railties:>= 7.0.0|checksum:26e9f273445562d2481bd6345a204492502e7a494d499b80b9ec1f3161cb2691,rubygems:>= 3.2.0
+2.7.0-x64-mingw32 railties:>= 7.0.0|checksum:c5d852c9d8db01933af36aa4612e95272cf632247d59be8d22c598e0a8529fcf,rubygems:>= 3.2.0
+2.7.0-x86_64-darwin railties:>= 7.0.0|checksum:35466e672457a77b741f46e19fdf9b62b7a3d13bd94c5e1538377d6696402acf,rubygems:>= 3.2.0
+2.7.0-x86_64-linux railties:>= 7.0.0|checksum:5f44d213b3c70ff39f0d4a0a19fbada73de89e5521a048647f49912de15d3b26,rubygems:>= 3.2.0
+2.7.0 railties:>= 7.0.0|checksum:d7880654a85540d4a2325cfd80eef281c22ea0295b1c5a06129d054f46fca7dd,rubygems:>= 3.2.0
+2.7.1-aarch64-linux railties:>= 7.0.0|checksum:92c2d3e00776f0f66ac5a22d89a1d0203e8439ac995bd5391c0273df69e2b777,rubygems:>= 3.2.0
+2.7.1-arm-linux railties:>= 7.0.0|checksum:fc28b4d53ba57658b89ba4a2d9f6b69657037ec1c9474ae7f5799de324386563,rubygems:>= 3.2.0
+2.7.1-arm64-darwin railties:>= 7.0.0|checksum:9298fcd77dc3eaad5a10c3dda44a7ef14043cfd8cf4c30bc44f4fcc6b53eb11b,rubygems:>= 3.2.0
+2.7.1-x64-mingw-ucrt railties:>= 7.0.0|checksum:5e22ed5f3430c1632d9a2b71c31cd9fca6c15e7e0178004bfab9392d02b171b3,rubygems:>= 3.2.0
+2.7.1-x64-mingw32 railties:>= 7.0.0|checksum:b0503ddfd7f68b8643ad6a8eeffc61708837bf6a324cdcf9757789967a596c4b,rubygems:>= 3.2.0
+2.7.1-x86_64-darwin railties:>= 7.0.0|checksum:14bb695a0892b0e4d01d11741d3e67b9da68960c4bc161ee52d4260866a291f1,rubygems:>= 3.2.0
+2.7.1 railties:>= 7.0.0|checksum:e8b445816807b8ce7aa2b0727a656ffd27aca78d97f00dd00d224d1b26772a90,rubygems:>= 3.2.0
+2.7.1-x86_64-linux railties:>= 7.0.0|checksum:4f8e757a6a7433152e5e2788ef238bbd3f1fcafb08d7cb69faf261a4788a2554,rubygems:>= 3.2.0
+2.7.2-aarch64-linux railties:>= 7.0.0|checksum:62ada208beff10415fd0157674e77dc4488317136a8d523a93729f866d58ae8d,rubygems:>= 3.2.0
+2.7.2-arm-linux railties:>= 7.0.0|checksum:804e79388986fd520878fbd3ed9acecfdc1098638b598eaaa0c507d50fdb12e2,rubygems:>= 3.2.0
+2.7.2-arm64-darwin railties:>= 7.0.0|checksum:55a8569f5f68490fcafae13e39e8e2bb5c19a5e1debeab3c18ce47d08cba85e2,rubygems:>= 3.2.0
+2.7.2-x64-mingw-ucrt railties:>= 7.0.0|checksum:347b985c52d09913fbb018d9711c4617b843f63ae1187f7a724de8a4ea155d98,rubygems:>= 3.2.0
+2.7.2-x64-mingw32 railties:>= 7.0.0|checksum:69c617fc1a3f53b18934831aa246733e99bdb9584225a2b4542082821e717478,rubygems:>= 3.2.0
+2.7.2-x86_64-darwin railties:>= 7.0.0|checksum:3807fcefe69a2078cbd0c1f439a5a4463282456741349b05926266efa30bc052,rubygems:>= 3.2.0
+2.7.2-x86_64-linux railties:>= 7.0.0|checksum:def21c2d10e4ed118d8fe6388e132f91e646c50bf9a895c4cd6deeaed1dd408b,rubygems:>= 3.2.0
+2.7.2 railties:>= 7.0.0|checksum:8ec3492fc6a1f5dfb8c1cae89b0f6db0d007c6dd5e6cafead7b6dea7ef738b83,rubygems:>= 3.2.0
+2.7.3-aarch64-linux railties:>= 7.0.0|checksum:08858ba2c3b25b24993eda08a87ea9c5eb3642304daf2a5cee55378621bc776c,rubygems:>= 3.2.0
+2.7.3-arm-linux railties:>= 7.0.0|checksum:012f867e37f556ebe2146db7062c81a8435f6938a6d355c7d66a95363efc1cb4,rubygems:>= 3.2.0
+2.7.3-arm64-darwin railties:>= 7.0.0|checksum:f22322bb8ad77c27f02826605107e45757183c9c464738e6c124716582277dd6,rubygems:>= 3.2.0
+2.7.3-x64-mingw-ucrt railties:>= 7.0.0|checksum:1a583f64e0df487ae3d2832ab8ecaa49bf94c91976d5a36543dc8b46f7d0df9e,rubygems:>= 3.2.0
+2.7.3-x64-mingw32 railties:>= 7.0.0|checksum:87b7f150dc650e41531ec1c8c5735373dfbda8a6cd4f366a71e8292b937703bd,rubygems:>= 3.2.0
+2.7.3-x86_64-darwin railties:>= 7.0.0|checksum:b86cfacf0e340cf79457962a2e8d5b99e008b22e2891c450a54768a26872350c,rubygems:>= 3.2.0
+2.7.3-x86_64-linux railties:>= 7.0.0|checksum:2f9ea2dbfafc33ade867549f80b31b3413d3c1aef1d192c06b5db3fa244e6593,rubygems:>= 3.2.0
+2.7.3 railties:>= 7.0.0|checksum:5a4e400dd7463d45099972589402f43325e42ef4634a2f194178d5192794697b,rubygems:>= 3.2.0
+2.7.4-aarch64-linux railties:>= 7.0.0|checksum:c954122a1e9c27aa666fd19ab8d2f8c4edfa24832407e14b2e4607a4b5d169e8,rubygems:>= 3.2.0
+2.7.4-arm64-darwin railties:>= 7.0.0|checksum:f68a1acbcb31e56acb4796b4661483c7dd90e33c8980cbac1009207fa7ac4094,rubygems:>= 3.2.0
+2.7.4-arm-linux railties:>= 7.0.0|checksum:1188d8e8b1b2f5af467410257e01e1cff76320ffb93dce8f601245ada89f8c33,rubygems:>= 3.2.0
+2.7.4 railties:>= 7.0.0|checksum:46731748bba06b4629f594ee3e103509fcb90ba8df672c7f791ece1a4761460d,rubygems:>= 3.2.0
+2.7.4-x64-mingw32 railties:>= 7.0.0|checksum:984dec5ae28c853dec240baff8d20ccaa940a059b003c7ad75e0b8729aaf3d11,rubygems:>= 3.2.0
+2.7.4-x64-mingw-ucrt railties:>= 7.0.0|checksum:c58d9a1cf59ccd446fc1edeceac3b6746d31f148fb52f37870e9ac8f1e4f2e32,rubygems:>= 3.2.0
+2.7.4-x86_64-darwin railties:>= 7.0.0|checksum:3cb2f9ec58fe865481340aae268b37cbef14efd9318fa850efedb4e00d710916,rubygems:>= 3.2.0
+2.7.4-x86_64-linux railties:>= 7.0.0|checksum:49358914300fc55d353038d0348090ff0c8581eba76770350e7939888f7d9092,rubygems:>= 3.2.0
+2.7.5-aarch64-linux railties:>= 7.0.0|checksum:8e2035dfaa7a4eb359f040902ee5ec233974a89504d9b76d569e5249c7c3d6ca,rubygems:>= 3.2.0
+2.7.5-arm64-darwin railties:>= 7.0.0|checksum:472e8ca933919060d9dec18b0e2f1f939d79f08b98ea6d4a59bef86b6d7a7500,rubygems:>= 3.2.0
+2.7.5-arm-linux railties:>= 7.0.0|checksum:ac274335d2a2d0b1139f9761b9052bcd667b33e75877d4ab63c00e9366915dab,rubygems:>= 3.2.0
+2.7.5 railties:>= 7.0.0|checksum:eb005b80cfd3bd750381b9d449ae4cf9cfabaf53e59f9aad61ef0b0bbbd955e1,rubygems:>= 3.2.0
+2.7.5-x64-mingw32 railties:>= 7.0.0|checksum:4913b8327a9aedfe49059e078045efc49ec397c5411ffe41e8fbb265640c688d,rubygems:>= 3.2.0
+2.7.5-x64-mingw-ucrt railties:>= 7.0.0|checksum:9464855fc88484dd9d2d6626d6aa799bae145b1b55da793f9f70369719e699a2,rubygems:>= 3.2.0
+2.7.5-x86_64-darwin railties:>= 7.0.0|checksum:ced2547e4c10b1e7ce3bfb27504cb68deb4ea6f80981a5bdf68a9c7dc3230b29,rubygems:>= 3.2.0
+2.7.5-x86_64-linux railties:>= 7.0.0|checksum:ac8e63ca9768a52598910e034e4c3191f5de993a85c64c369fdd12a50f51d005,rubygems:>= 3.2.0
+2.7.6-aarch64-linux railties:>= 7.0.0|checksum:3f07d536c83890623191e332501a3b4409db6777e8cd7e6ff83d5d95e1f341d3,rubygems:>= 3.2.0
+2.7.6-arm64-darwin railties:>= 7.0.0|checksum:d30a57f7a7eb68087821878427c4dadb480553590ab324f4973089d817f24fb4,rubygems:>= 3.2.0
+2.7.6-arm-linux railties:>= 7.0.0|checksum:9cb48aaf1084869333b4c1871fcdcd1fe476e38902c27aa58736a502a67fc488,rubygems:>= 3.2.0
+2.7.6 railties:>= 7.0.0|checksum:f2c7521ca178bc0218ed21679fccb6f2e59e81d634ddd22212a753215fc392ab,rubygems:>= 3.2.0
+2.7.6-x64-mingw32 railties:>= 7.0.0|checksum:304883384a32a2359257108fdb763f91569d9dbbbbe1f29dae626e181f47319e,rubygems:>= 3.2.0
+2.7.6-x64-mingw-ucrt railties:>= 7.0.0|checksum:f5828f2322b6b2909aa4b0dbac7cc60be9cfc7da26143ef6a9c73a82fb9bc50b,rubygems:>= 3.2.0
+2.7.6-x86_64-darwin railties:>= 7.0.0|checksum:cffd79d7f1da311caccdcf479521d622fda301895e02489aa8e1a54e01e2fcec,rubygems:>= 3.2.0
+2.7.6-x86_64-linux railties:>= 7.0.0|checksum:f679dd3b9f6eb4d32caae26b3aaa29076c7437599ccfd810dbf8ce405fd4277b,rubygems:>= 3.2.0
+2.7.7-aarch64-linux railties:>= 7.0.0|checksum:d9f30312e02ae8395a8e7dbf5bc03d9f39625ce1042800321db2edb1df8fcfbc,rubygems:>= 3.2.0
+2.7.7-arm64-darwin railties:>= 7.0.0|checksum:90d0cc13753612579b63a67cd67f45a176f04fd7860a32bc3028dcd6ace94769,rubygems:>= 3.2.0
+2.7.7-arm-linux railties:>= 7.0.0|checksum:f44fe532d1ffb29243430c43bb1c82268ae5419fef4fae1e5dcbf7420dd4dcfe,rubygems:>= 3.2.0
+2.7.7 railties:>= 7.0.0|checksum:a74751bad9f956ab4c365de3abd10912ca2399f521c197d1e6025e0bbfc0c5ab,rubygems:>= 3.2.0
+2.7.7-x64-mingw32 railties:>= 7.0.0|checksum:84b0257763d2dca6d2fbf5a669868bb469a5328a5496a26dea17da16c44b7963,rubygems:>= 3.2.0
+2.7.7-x64-mingw-ucrt railties:>= 7.0.0|checksum:97776da8ab06571d31603ed7724c46c1c29b756c5c51356eec75a944b866294e,rubygems:>= 3.2.0
+2.7.7-x86_64-darwin railties:>= 7.0.0|checksum:af952d88ea84c166905fba3a815c51040f2baecce52554304282c2d7ef400d8c,rubygems:>= 3.2.0
+2.7.7-x86_64-linux railties:>= 7.0.0|checksum:01408afe03f3c61447126c2c33caf940c9729ac8fda2da500887268b5fd3c51c,rubygems:>= 3.2.0
+3.0.0.rc1 railties:>= 7.0.0,tailwindcss-ruby:>= 0|checksum:8a2373a5dce08062f155002fa280f4b6cffd94f6a830ee89cd494227fd1690d4,rubygems:>= 3.2.0
+2.7.8-aarch64-linux railties:>= 7.0.0|checksum:11d9a2bc810c64591b1db847d41a40ca88a7ed1517d9c2340ad7aa906a1fbbd3,rubygems:>= 3.2.0
+2.7.8-arm64-darwin railties:>= 7.0.0|checksum:5c32029a5b25cf0aea9e7163802d6d5384714170aed798959d3c170ec366f34f,rubygems:>= 3.2.0
+2.7.8-arm-linux railties:>= 7.0.0|checksum:d8b5e655f72e8af40618d8bed860f8884115578406a9671f716c7a4fd4d40a75,rubygems:>= 3.2.0
+2.7.8 railties:>= 7.0.0|checksum:b64103bbe60a419b0bf76f5ed1c159ded10101ff57f17aa59d33f7c9fc0bebf6,rubygems:>= 3.2.0
+2.7.8-x64-mingw32 railties:>= 7.0.0|checksum:a81aee951635f4adea5f254b19d8b370b5b93cd6b6bee8a1399005678d95223b,rubygems:>= 3.2.0
+2.7.8-x64-mingw-ucrt railties:>= 7.0.0|checksum:fc90c168cacfb2c49bcf79e6b08219dfbf5b9eb72bb574572e26fa05fb47c917,rubygems:>= 3.2.0
+2.7.8-x86_64-darwin railties:>= 7.0.0|checksum:8b5f5d995916f30c071b960b9ad8caa16efea4e0465ea029cba66fe438184da5,rubygems:>= 3.2.0
+2.7.8-x86_64-linux railties:>= 7.0.0|checksum:cb5c4b350454f62796a72b35669ad953f564077d1b6ebdcd353551d8ceb6a86e,rubygems:>= 3.2.0
+2.7.9-aarch64-linux railties:>= 7.0.0|checksum:e445c0761bcdc8fab423f35a9c6f2791ca73e46ef558a0e02601c9a2cf83dcb3,rubygems:>= 3.2.0
+2.7.9-arm64-darwin railties:>= 7.0.0|checksum:9fd0e0f45e6695bf09c9275170d81ba47fdf6af4b7b6352d97467b7bb8e019f5,rubygems:>= 3.2.0
+2.7.9-arm-linux railties:>= 7.0.0|checksum:95ec559d3478b9ef42232548ebe810570266b795b08822bfc472f5e9c98630b6,rubygems:>= 3.2.0
+2.7.9 railties:>= 7.0.0|checksum:227a80aecdc25465646e501b5b992dcde98799e9d58c44938b61ab8b62cccdb9,rubygems:>= 3.2.0
+2.7.9-x64-mingw32 railties:>= 7.0.0|checksum:e585cc252e1e814d0143b2b32ae2e82bfe418997b0ae72e6a9f777cd5fe0b02e,rubygems:>= 3.2.0
+2.7.9-x64-mingw-ucrt railties:>= 7.0.0|checksum:29bd47342ae47b02529266234237a2857f615e8a17d668989a4167aea0081d3f,rubygems:>= 3.2.0
+2.7.9-x86_64-darwin railties:>= 7.0.0|checksum:55a361c43ff8a65209e6d46f4d7dd901badb3b8a26ab603991789a2e5f4f79a9,rubygems:>= 3.2.0
+2.7.9-x86_64-linux railties:>= 7.0.0|checksum:6ac0523506cb122e3e26bb07c2f6e150542530d0d13d8a4e8466ed7a69fbfce2,rubygems:>= 3.2.0
+3.0.0 railties:>= 7.0.0,tailwindcss-ruby:>= 0|checksum:ee9e5956411968fa445d2bb514c8fb70b239ca2e6f2d5bae06b161e2bee19446,rubygems:>= 3.2.0
+3.1.0 railties:>= 7.0.0,tailwindcss-ruby:>= 0|checksum:bcd468fae3ffce33d6fc81170e8fec7febd4fd1c14695f2bde72256c92ccfc75,rubygems:>= 3.2.0
+3.2.0 railties:>= 7.0.0,tailwindcss-ruby:>= 0|checksum:d8dbcc1e9cd1ba7b8b68300e45dbc61a26252bd6df3d4805bdde76176ca8e3cc,rubygems:>= 3.2.0
+3.3.0 railties:>= 7.0.0,tailwindcss-ruby:>= 0|checksum:dcb8ecbc737152236b625920659a0089a043393d85bcce51c34235d0ebfaba1c,rubygems:>= 3.2.0
+4.0.0.rc1 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:b48ac2e6bcd908abe3344c99d8e7a5be9ab4314bf876686d57649780a2b13e81,rubygems:>= 3.2.0
+3.3.1 railties:>= 7.0.0,tailwindcss-ruby:~> 3.0|checksum:5dcc010ee90d53a59f40eff1f2706bc0b1d77fd3713a0fb196ff698bc4529dfe,rubygems:>= 3.2.0
+4.0.0.rc2 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:8f403392384fce5c95f334b3db7096fc139874807f785143f26bae342d9c209e,rubygems:>= 3.2.0
+4.0.0.rc3 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:a06078f4a8283ec1d0bd5824be03512fe2e1e7202e885a52e54df528a5f4230d,rubygems:>= 3.2.0
+4.0.0.rc4 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:83720932064dbaf802e133066bc70c148f86a0a55030375098a5bbf221cb3d3c,rubygems:>= 3.2.0
+4.0.0.rc5 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:2b783dc3cc4f49065d44ae47b03e8ea4d88addc0543362b58e97c637d6a4b918,rubygems:>= 3.2.0
+4.0.0 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:19c871a71eaf24477a480e07fb4481e4293fe33290096305a96f2f0d3ced053a,rubygems:>= 3.2.0
+4.1.0 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:a6d0dda17f4ca3c5fa958ffd5aeb67303583fdb086bc9c303011843b0e13f24e,rubygems:>= 3.2.0
+4.2.0 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:f0c4b5da8ca11304c883a2c8a3d4cc7cbb6ef797717fc77a1295911753eaa2d1,rubygems:>= 3.2.0
+4.2.1 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:ce66cd3e322fd74b13391db248a5e905ac6d80b6de8d2a9139eff65596e2c234,rubygems:>= 3.2.0
+4.2.2 railties:>= 7.0.0,tailwindcss-ruby:~> 4.0|checksum:38e33cd50f3770f33250678ad33f08d249530a0920b956448a92610a61e6bd10,rubygems:>= 3.2.0
