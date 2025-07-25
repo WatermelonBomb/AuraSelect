@@ -9,6 +9,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: false,
+  async rewrites() {
+    return [
+      {
+        source: '/(.*)',
+        destination: '/',
+      },
+    ]
+  },
 }
 
 export default nextConfig
