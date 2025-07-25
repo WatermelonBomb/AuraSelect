@@ -10,6 +10,14 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: false,
+  webpack: (config, { isServer }) => {
+    // パスエイリアスの解決を確実にする
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': '.',
+    }
+    return config
+  },
   async rewrites() {
     return [
       {
