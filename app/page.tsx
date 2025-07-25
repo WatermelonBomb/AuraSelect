@@ -499,7 +499,7 @@ export default function AuraSelectLuxury() {
         <div className="container mx-auto p-4 md:p-6 max-w-6xl">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 champagne-gradient rounded-2xl flex items-center justify-center luxury-shadow">
+              <div className="w-14 h-14 pink-gold-gradient rounded-2xl flex items-center justify-center luxury-shadow">
                 <Crown className="w-7 h-7 text-white" />
               </div>
               <div>
@@ -520,14 +520,14 @@ export default function AuraSelectLuxury() {
             <TabsList className="grid w-full grid-cols-2 bg-white/80 backdrop-blur-sm border-2 border-amber-100 rounded-2xl p-2 luxury-shadow">
               <TabsTrigger
                 value="notifications"
-                className="data-[state=active]:champagne-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
+                className="data-[state=active]:pink-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
               >
                 <Bell className="w-5 h-5 mr-2" />
                 試用リクエスト
               </TabsTrigger>
               <TabsTrigger
                 value="history"
-                className="data-[state=active]:champagne-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
+                className="data-[state=active]:pink-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
               >
                 <History className="w-5 h-5 mr-2" />
                 履歴管理
@@ -539,7 +539,7 @@ export default function AuraSelectLuxury() {
                 {trialRequests.length === 0 ? (
                   <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl overflow-hidden">
                     <CardContent className="p-8 md:p-12 text-center">
-                      <div className="w-16 h-16 md:w-20 md:h-20 champagne-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
+                      <div className="w-16 h-16 md:w-20 md:h-20 pink-gold-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
                         <Bell className="w-8 h-8 md:w-10 md:h-10 text-white" />
                       </div>
                       <h3 className="text-lg md:text-xl font-playfair font-semibold text-gray-800 mb-2">
@@ -557,7 +557,7 @@ export default function AuraSelectLuxury() {
                       <CardHeader className="champagne-accent border-b border-amber-200/30">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 champagne-gradient rounded-full flex items-center justify-center">
+                            <div className="w-10 h-10 pink-gold-gradient rounded-full flex items-center justify-center">
                               <Sparkles className="w-5 h-5 text-white" />
                             </div>
                             <div>
@@ -573,7 +573,7 @@ export default function AuraSelectLuxury() {
                             <Badge
                               className={`border-0 px-3 md:px-4 py-2 rounded-full font-medium text-xs md:text-sm ${
                                 request.status === "pending"
-                                  ? "champagne-gradient text-white"
+                                  ? "pink-gold-gradient text-white"
                                   : request.status === "completed"
                                     ? "bg-gradient-to-r from-green-400 to-green-500 text-white"
                                     : "bg-gradient-to-r from-gray-400 to-gray-500 text-white"
@@ -661,7 +661,7 @@ export default function AuraSelectLuxury() {
             <TabsContent value="history" className="mt-8">
               <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl">
                 <CardContent className="p-8 md:p-12 text-center">
-                  <div className="w-16 h-16 md:w-20 md:h-20 champagne-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
+                  <div className="w-16 h-16 md:w-20 md:h-20 pink-gold-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
                     <History className="w-8 h-8 md:w-10 md:h-10 text-white" />
                   </div>
                   <h3 className="text-lg md:text-xl font-playfair font-semibold text-gray-800 mb-2">履歴機能</h3>
@@ -700,7 +700,7 @@ export default function AuraSelectLuxury() {
         {/* ヘッダー */}
         <div className="flex items-center justify-between mb-6 md:mb-8">
           <div className="flex items-center gap-3 md:gap-4">
-            <div className="w-12 h-12 md:w-14 md:h-14 champagne-gradient rounded-2xl flex items-center justify-center luxury-shadow hover-lift">
+            <div className="w-12 h-12 md:w-14 md:h-14 pink-gold-gradient rounded-2xl flex items-center justify-center luxury-shadow hover-lift">
               <Sparkles className="w-6 h-6 md:w-7 md:h-7 text-white" />
             </div>
             <div>
@@ -740,7 +740,7 @@ export default function AuraSelectLuxury() {
             >
               <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
               {trialCart.length > 0 && (
-                <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 champagne-gradient rounded-full flex items-center justify-center luxury-shadow">
+                <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 pink-gold-gradient rounded-full flex items-center justify-center luxury-shadow">
                   <span className="text-white text-xs font-bold">{trialCart.length}</span>
                 </div>
               )}
@@ -836,7 +836,7 @@ export default function AuraSelectLuxury() {
 
                   <Button
                     onClick={() => addToTrialCart(selectedProduct)}
-                    className="w-full champagne-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow text-base md:text-lg hover-lift"
+                    className="w-full pink-gold-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow text-base md:text-lg hover-lift"
                     disabled={trialCart.find((item) => item.id === selectedProduct.id)}
                   >
                     {trialCart.find((item) => item.id === selectedProduct.id) ? (
@@ -876,7 +876,7 @@ export default function AuraSelectLuxury() {
                       onClick={() => setSelectedCategory(category.id)}
                     >
                       <CardContent className="p-4 md:p-6 text-center">
-                        <div className="w-16 h-16 md:w-20 md:h-20 champagne-gradient rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300 luxury-shadow">
+                        <div className="w-16 h-16 md:w-20 md:h-20 pink-gold-gradient rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300 luxury-shadow">
                           <IconComponent className="w-8 h-8 md:w-10 md:h-10 text-white" />
                         </div>
                         <h3 className="font-playfair font-semibold text-gray-800 mb-1 text-sm md:text-base">{category.name}</h3>
@@ -893,7 +893,7 @@ export default function AuraSelectLuxury() {
               <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl overflow-hidden animate-in slide-in-from-bottom duration-300">
                 <CardHeader className="champagne-accent border-b border-amber-200/30">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 md:w-10 md:h-10 champagne-gradient rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 md:w-10 md:h-10 pink-gold-gradient rounded-full flex items-center justify-center">
                       <ShoppingCart className="w-4 h-4 md:w-5 md:h-5 text-white" />
                     </div>
                     <CardTitle className="text-lg md:text-xl font-playfair text-gray-800">試用カート</CardTitle>
@@ -944,7 +944,7 @@ export default function AuraSelectLuxury() {
 
                   <Button
                     onClick={sendTrialRequest}
-                    className="w-full champagne-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow text-base md:text-lg hover-lift"
+                    className="w-full pink-gold-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow text-base md:text-lg hover-lift"
                   >
                     <Bell className="w-5 h-5 mr-2" />
                     スタッフにお知らせ
@@ -1000,7 +1000,7 @@ export default function AuraSelectLuxury() {
                       variant={sortBy === "name" ? "default" : "outline"}
                       size="sm"
                       onClick={() => setSortBy("name")}
-                      className="champagne-gradient text-white border-0 rounded-full px-4 py-2"
+                      className="pink-gold-gradient text-white border-0 rounded-full px-4 py-2"
                     >
                       名前順
                     </Button>
@@ -1038,7 +1038,7 @@ export default function AuraSelectLuxury() {
                 {filteredAndSortedProducts.length === 0 ? (
                   <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 champagne-gradient rounded-full flex items-center justify-center mx-auto mb-4 luxury-shadow">
+                      <div className="w-16 h-16 pink-gold-gradient rounded-full flex items-center justify-center mx-auto mb-4 luxury-shadow">
                         <Search className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-playfair font-semibold text-gray-800 mb-2">商品が見つかりません</h3>
