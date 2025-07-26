@@ -117,7 +117,7 @@ export default function AdminDashboard({
         {/* ヘッダー */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 pink-gold-gradient rounded-2xl flex items-center justify-center luxury-shadow">
+            <div className="w-14 h-14 rose-gold-gradient rounded-2xl flex items-center justify-center luxury-shadow">
               <Settings className="w-7 h-7 text-white" />
             </div>
             <div>
@@ -197,14 +197,14 @@ export default function AdminDashboard({
           <TabsList className="grid w-full grid-cols-2 bg-white/80 backdrop-blur-sm border-2 border-amber-100 rounded-2xl p-2 luxury-shadow">
             <TabsTrigger
               value="products"
-              className="data-[state=active]:pink-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
+              className="data-[state=active]:rose-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
             >
               <Package className="w-5 h-5 mr-2" />
               商品管理
             </TabsTrigger>
             <TabsTrigger
               value="analytics"
-              className="data-[state=active]:pink-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
+              className="data-[state=active]:rose-gold-gradient data-[state=active]:text-white rounded-xl font-medium py-3"
             >
               <TrendingUp className="w-5 h-5 mr-2" />
               分析・レポート
@@ -218,7 +218,7 @@ export default function AdminDashboard({
                 <h2 className="text-2xl font-bold font-playfair text-gray-800">商品一覧</h2>
                 <Button
                   onClick={() => setShowAddProduct(true)}
-                  className="pink-gold-gradient hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl luxury-shadow"
+                  className="rose-gold-gradient hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl luxury-shadow"
                 >
                   <Plus className="w-5 h-5 mr-2" />
                   新商品追加
@@ -338,7 +338,7 @@ export default function AdminDashboard({
                       <div className="flex gap-4">
                         <Button
                           type="submit"
-                          className="pink-gold-gradient hover:opacity-90 text-white font-semibold px-8 py-3 rounded-xl luxury-shadow"
+                          className="rose-gold-gradient hover:opacity-90 text-white font-semibold px-8 py-3 rounded-xl luxury-shadow"
                         >
                           {editingProduct ? "更新" : "追加"}
                         </Button>
@@ -443,7 +443,7 @@ export default function AdminDashboard({
           <TabsContent value="analytics" className="mt-8">
             <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl">
               <CardContent className="p-12 text-center">
-                <div className="w-20 h-20 pink-gold-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
+                <div className="w-20 h-20 rose-gold-gradient rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow">
                   <TrendingUp className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-playfair font-semibold text-gray-800 mb-2">分析・レポート機能</h3>
