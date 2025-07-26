@@ -8,7 +8,6 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
-import { ShampooIcon } from "@/components/ui/shampoo-icon"
 import AdminDashboard from "@/components/AdminDashboard"
 
 // サンプルデータ
@@ -868,7 +867,7 @@ export default function AuraSelectLuxury() {
                 {categories.map((category) => {
                   const getIconComponent = (iconName: string) => {
                     if (iconName === "Droplets") return <Droplets className="w-8 h-8 md:w-10 md:h-10 text-white" />
-                    if (iconName === "Sprout") return <ShampooIcon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                    if (iconName === "Sprout") return <Sprout className="w-8 h-8 md:w-10 md:h-10 text-white" />
                     if (iconName === "Gem") return <Gem className="w-8 h-8 md:w-10 md:h-10 text-white" />
                     return <Crown className="w-8 h-8 md:w-10 md:h-10 text-white" />
                   }
