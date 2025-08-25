@@ -1,0 +1,51 @@
+import type { Product } from "@/app/page" // もしくは "@/components/types" に切り出し推奨
+
+// 初期の商品データ
+export const initialProducts: Product[] = [
+  {
+    id: "1",
+    name: "ラグジュアリー セラム",
+    price: 12800,
+    category: "skincare",
+    image: "https://images.unsplash.com/photo-1702471896938-6ca42213ab1c?q=80&w=1335&auto=format&fit=crop",
+    description: "24金ナノ粒子配合の最高級美容液。肌の奥深くまで浸透し、極上のハリと輝きを与えます。",
+    ingredients: "24金ナノ粒子、プラチナコロイド、ヒアルロン酸、コラーゲンペプチド",
+    fragrance: "ホワイトティー & ベルガモット",
+    tags: ["プレミアム", "エイジングケア", "24金配合"],
+    rating: 4.9,
+    isNew: true,
+    stock: 15,
+    isActive: true,
+  },
+  {
+    id: "2",
+    name: "オーガニック シャンプー プレミアム",
+    price: 8900,
+    category: "shampoo",
+    image: "https://images.unsplash.com/photo-1702471896938-6ca42213ab1c?q=80&w=1335&auto=format&fit=crop",
+    description: "希少なアルガンオイルとモロッコ産クレイを贅沢に配合。髪に自然な輝きと滑らかさを。",
+    ingredients: "オーガニックアルガンオイル、モロッコ産クレイ、ローズヒップオイル",
+    fragrance: "ダマスクローズ & サンダルウッド",
+    tags: ["オーガニック", "無添加", "サロン専用"],
+    rating: 4.8,
+    isPopular: true,
+    stock: 8,
+    isActive: true,
+  },
+  {
+    id: "3",
+    name: "プラチナ リペア トリートメント",
+    price: 15200,
+    category: "treatment",
+    image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop&crop=center",
+    description: "プラチナナノ粒子が髪の内部まで浸透。ダメージを根本から修復し、シルクのような手触りに。",
+    ingredients: "プラチナナノ粒子、ケラチン、シルクプロテイン、椿オイル",
+    fragrance: "ジャスミン & ホワイトムスク",
+    tags: ["プラチナ配合", "集中補修", "サロン限定"],
+    rating: 5.0,
+    isLimited: true,
+    stock: 3,
+    isActive: true,
+  },
+  // ...必要なら追加
+]
