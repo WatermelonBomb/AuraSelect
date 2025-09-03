@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react"
 import { Droplets, Sprout, Gem, Crown } from "lucide-react"
-import type { CategoryId } from "@/app/page" // もしくは "@/components/types" に切り出し推奨
+import type { CategoryId } from "@/lib/types"
 
 export type Category = {
   id: CategoryId

@@ -4,14 +4,18 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false, // Enable type checking for production
   },
   images: {
-    unoptimized: true,
+    unoptimized: false, // Enable image optimization
+    formats: ['image/webp', 'image/avif'],
   },
   trailingSlash: false,
   experimental: {
-    optimizePackageImports: ['@radix-ui/react-icons'],
+    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
   },
   webpack: (config, { isServer }) => {
     // パスエイリアスの解決を確実にする

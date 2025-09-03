@@ -1,4 +1,4 @@
-import type { Product } from "@/app/page" // もしくは "@/components/types" に切り出し推奨
+import type { Product } from "@/lib/types"
 
 // 初期の商品データ
 export const initialProducts: Product[] = [

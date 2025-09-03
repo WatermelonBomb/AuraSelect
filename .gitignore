@@ -72,6 +72,24 @@ wheels/
 *.egg
 MANIFEST
 
+# Virtual environment
+backend/venv/
+backend/env/
+backend/.venv/
+.venv/
+venv/
+env/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# FastAPI
+.pytest_cache/
+.coverage
+htmlcov/
+
 # Other files
 *.log
 *.tmp
