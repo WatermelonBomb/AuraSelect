@@ -2,8 +2,8 @@
 const path = require('path')
 
 const nextConfig = {
-  // Output configuration for better compatibility
-  output: 'standalone',
+  // Only use standalone output in production
+  ...(process.env.NODE_ENV === 'production' && { output: 'standalone' }),
   
   typescript: {
     ignoreBuildErrors: false,
