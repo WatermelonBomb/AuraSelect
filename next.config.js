@@ -1,12 +1,7 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
+
 const nextConfig = {
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        '@': '.',
-      },
-    },
-  },
   typescript: {
     ignoreBuildErrors: false,
   },
@@ -14,10 +9,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   transpilePackages: ['@tanstack/react-query'],
-  webpack: (config, { isServer }) => {
+  webpack: (config, options) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@': require('path').resolve(__dirname),
+      '@': path.resolve(__dirname),
     }
     return config
   },
