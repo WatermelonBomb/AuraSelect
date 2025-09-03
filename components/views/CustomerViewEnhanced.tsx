@@ -1,16 +1,16 @@
-"use client"
+'use client'
 
 import type { LucideIcon } from "lucide-react"
 import {
   ShoppingCart, Sparkles, User, Settings, ArrowLeft, Star, Search, Filter, X, Heart,
-  Droplets, Sprout, Gem, Crown, // ← 文字列指定のときに使う
+  Droplets, Sprout, Gem, Crown,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
-import type { Product, CategoryId } from "@/app/page"
+import TrialCartEnhanced from "@/components/TrialCartEnhanced"
+import type { Product, CategoryId } from "@/components/views/AdminDashboard"
 
 // icon は「文字列 or Lucide コンポーネント」の両対応
 type Category = { id: CategoryId; name: string; icon?: string | LucideIcon; description?: string }
@@ -31,14 +31,13 @@ type Props = {
   setSelectedProduct: (p: Product | null) => void
   addToTrialCart: (p: Product) => void
   removeFromTrialCart: (id: string) => void
+  clearTrialCart: () => void
   setMemo: (s: string) => void
-  sendTrialRequest: () => void
   setSearchQuery: (s: string) => void
   setSortBy: (s: "name" | "price" | "rating") => void
   setShowFilters: (b: boolean) => void
 
-  goStaff: () => void
-  goAdmin: () => void
+  goDashboard: () => void
 
   pendingCount: number
   fmtPrice: (n: number) => string
@@ -65,13 +64,13 @@ function CategoryIcon({ icon }: { icon?: string | LucideIcon }) {
   return <IconComp className="w-8 h-8 md:w-10 md:h-10 text-white" />
 }
 
-export default function CustomerView(props: Props) {
+export default function CustomerViewEnhanced(props: Props) {
   const {
     products, categories, selectedCategory, selectedProduct, trialCart, memo,
     searchQuery, sortBy, showFilters, isLoading,
-    setSelectedCategory, setSelectedProduct, addToTrialCart, removeFromTrialCart,
-    setMemo, sendTrialRequest, setSearchQuery, setSortBy, setShowFilters,
-    goStaff, goAdmin, pendingCount, fmtPrice,
+    setSelectedCategory, setSelectedProduct, addToTrialCart, removeFromTrialCart, clearTrialCart,
+    setMemo, setSearchQuery, setSortBy, setShowFilters,
+    goDashboard, pendingCount, fmtPrice,
   } = props
 
   return (
@@ -92,36 +91,14 @@ export default function CustomerView(props: Props) {
             <Button
               variant="outline"
               size="sm"
-              onClick={goStaff}
-              aria-label="スタッフ画面へ"
+              onClick={goDashboard}
+              aria-label="ダッシュボードへ"
               className="border-2 border-amber-200 hover:bg-amber-50 rounded-xl w-10 h-10 md:w-12 md:h-12 p-0 relative"
             >
-              <User className="w-4 h-4 md:w-5 md:h-5" />
+              <Settings className="w-4 h-4 md:w-5 md:h-5" />
               {pendingCount > 0 && (
                 <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center luxury-shadow">
                   <span className="text-white text-xs font-bold">{pendingCount}</span>
-                </div>
-              )}
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={goAdmin}
-              aria-label="管理画面へ"
-              className="border-2 border-amber-200 hover:bg-amber-50 rounded-xl w-10 h-10 md:w-12 md:h-12 p-0"
-            >
-              <Settings className="w-4 h-4 md:w-5 md:h-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              aria-label="試用カート"
-              className="border-2 border-amber-200 hover:bg-amber-50 rounded-xl w-10 h-10 md:w-12 md:h-12 p-0 relative bg-transparent"
-            >
-              <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
-              {trialCart.length > 0 && (
-                <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 rose-gold-gradient rounded-full flex items-center justify-center luxury-shadow">
-                  <span className="text-white text-xs font-bold">{trialCart.length}</span>
                 </div>
               )}
             </Button>
@@ -142,6 +119,9 @@ export default function CustomerView(props: Props) {
                     src={selectedProduct.image}
                     alt={selectedProduct.name}
                     className="w-full h-64 md:h-80 object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center"
+                    }}
                   />
                   <div className="absolute top-4 left-4">
                     <Button variant="ghost" size="sm" aria-label="お気に入り" className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm">
@@ -187,7 +167,7 @@ export default function CustomerView(props: Props) {
                   <Button
                     onClick={() => addToTrialCart(selectedProduct)}
                     disabled={trialCart.some((i) => i.id === selectedProduct.id)}
-                    className="w-full rose-gold-gradient text-white font-semibold py-4 rounded-2xl"
+                    className="w-full rose-gold-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow"
                   >
                     <Sparkles className="w-5 h-5 mr-2" />
                     {trialCart.some((i) => i.id === selectedProduct.id) ? "カートに追加済み" : "試してみる"}
@@ -208,7 +188,7 @@ export default function CustomerView(props: Props) {
                 {categories.map((c) => (
                   <Card
                     key={c.id}
-                    className="glass-effect luxury-shadow hover:luxury-shadow-lg border-0 rounded-3xl cursor-pointer"
+                    className="glass-effect luxury-shadow hover:luxury-shadow-lg border-0 rounded-3xl cursor-pointer transition-all"
                     onClick={() => setSelectedCategory(c.id)}
                   >
                     <CardContent className="p-5 text-center">
@@ -223,45 +203,16 @@ export default function CustomerView(props: Props) {
               </div>
             </div>
 
-            {/* 試用カート */}
+            {/* 強化されたトライアルカート */}
             {trialCart.length > 0 && (
-              <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl">
-                <CardHeader><CardTitle className="font-playfair">試用カート</CardTitle></CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-3">
-                    {trialCart.map((p) => (
-                      <div key={p.id} className="flex items-center justify-between p-3 bg-white/60 rounded-2xl">
-                        <div className="flex items-center gap-3">
-                          <img src={p.image} alt={p.name} className="w-12 h-12 object-cover rounded-xl" />
-                          <div>
-                            <p className="font-semibold text-gray-800 text-sm">{p.name}</p>
-                            <p className="text-amber-600 font-bold text-sm">¥{fmtPrice(p.price)}</p>
-                          </div>
-                        </div>
-                        <Button variant="ghost" size="sm" onClick={() => removeFromTrialCart(p.id)} className="text-red-500 rounded-xl">
-                          <X className="w-4 h-4" />
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-800 mb-2">ご要望・メモ（任意）</label>
-                    <Textarea
-                      value={memo}
-                      onChange={(e) => setMemo(e.target.value)}
-                      placeholder="香りの好み、肌質、気になることなど"
-                      className="border-2 border-amber-200 rounded-2xl resize-none"
-                      rows={3}
-                    />
-                  </div>
-
-                  <Button onClick={sendTrialRequest} className="w-full rose-gold-gradient text-white font-semibold py-4 rounded-2xl">
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    スタッフにお知らせ
-                  </Button>
-                </CardContent>
-              </Card>
+              <TrialCartEnhanced
+                trialCart={trialCart}
+                memo={memo}
+                onRemoveFromCart={removeFromTrialCart}
+                onUpdateMemo={setMemo}
+                onClearCart={clearTrialCart}
+                fmtPrice={fmtPrice}
+              />
             )}
           </div>
         )}
@@ -273,9 +224,17 @@ export default function CustomerView(props: Props) {
               <Button variant="ghost" onClick={() => setSelectedCategory(null)} className="rounded-xl">
                 <ArrowLeft className="w-5 h-5 mr-2" /> カテゴリ一覧
               </Button>
-              <h2 className="text-lg md:text-xl font-bold font-playfair text-gray-800">
-                {categories.find((c) => c.id === selectedCategory)?.name}
-              </h2>
+              <div className="flex items-center gap-4">
+                <h2 className="text-lg md:text-xl font-bold font-playfair text-gray-800">
+                  {categories.find((c) => c.id === selectedCategory)?.name}
+                </h2>
+                {trialCart.length > 0 && (
+                  <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-2 rounded-xl border border-amber-200">
+                    <ShoppingCart className="w-4 h-4 text-amber-600" />
+                    <span className="text-sm font-medium text-gray-700">{trialCart.length}点</span>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* 検索とフィルタ */}
@@ -287,10 +246,10 @@ export default function CustomerView(props: Props) {
                     placeholder="商品を検索..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-10 border-2 border-amber-200 rounded-xl"
+                    className="pl-10 border-2 border-amber-200 focus:border-amber-400 rounded-xl"
                   />
                 </div>
-                <Button variant="outline" onClick={() => setShowFilters(!showFilters)} className="border-2 border-amber-200 rounded-xl px-3">
+                <Button variant="outline" onClick={() => setShowFilters(!showFilters)} className="border-2 border-amber-200 hover:bg-amber-50 rounded-xl px-3">
                   <Filter className="w-4 h-4" />
                 </Button>
               </div>
@@ -331,28 +290,57 @@ export default function CustomerView(props: Props) {
                   </Card>
                 ) : (
                   products
-                    .filter((p) => p.category === selectedCategory)
-                    .map((p) => (
-                      <Card key={p.id} onClick={() => setSelectedProduct(p)}
-                        className="glass-effect luxury-shadow hover:luxury-shadow-lg transition-all cursor-pointer border-0 rounded-3xl">
-                        <CardContent className="p-4">
-                          <div className="flex gap-4">
-                            <img src={p.image} alt={p.name} className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-2xl" />
-                            <div className="flex-1">
-                              <h3 className="font-bold text-gray-800 mb-1 text-sm md:text-base">{p.name}</h3>
-                              <div className="flex items-center justify-between mb-2">
-                                <p className="text-lg md:text-xl font-bold luxury-text-gradient">¥{fmtPrice(p.price)}</p>
-                                <div className="flex items-center gap-1">
-                                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                                  <span className="text-sm font-semibold text-gray-700">{p.rating}</span>
+                    .filter((p) => p.category === selectedCategory && p.isActive)
+                    .map((p) => {
+                      const isInCart = trialCart.some(item => item.id === p.id)
+                      return (
+                        <Card key={p.id} onClick={() => setSelectedProduct(p)}
+                          className="glass-effect luxury-shadow hover:luxury-shadow-lg transition-all cursor-pointer border-0 rounded-3xl relative">
+                          {isInCart && (
+                            <div className="absolute top-3 right-3 z-10">
+                              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <Sparkles className="w-4 h-4 text-white" />
+                              </div>
+                            </div>
+                          )}
+                          <CardContent className="p-4">
+                            <div className="flex gap-4">
+                              <img 
+                                src={p.image} 
+                                alt={p.name} 
+                                className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-2xl"
+                                onError={(e) => {
+                                  e.currentTarget.src = "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop&crop=center"
+                                }}
+                              />
+                              <div className="flex-1">
+                                <div className="flex items-start justify-between mb-2">
+                                  <h3 className="font-bold text-gray-800 mb-1 text-sm md:text-base">{p.name}</h3>
+                                  {p.isNew && <Badge className="bg-green-100 text-green-800 text-xs ml-2">NEW</Badge>}
+                                  {p.isPopular && <Badge className="bg-pink-100 text-pink-800 text-xs ml-2">人気</Badge>}
+                                </div>
+                                <div className="flex items-center justify-end mb-2">
+                                  <div className="flex items-center gap-1">
+                                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                    <span className="text-sm font-semibold text-gray-700">{p.rating}</span>
+                                  </div>
+                                </div>
+                                <p className="text-xs md:text-sm text-gray-600 line-clamp-2">{p.description}</p>
+                                <div className="flex items-center justify-between mt-2">
+                                  <div className="flex flex-wrap gap-1">
+                                    {p.tags.slice(0, 2).map((tag, idx) => (
+                                      <span key={idx} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
+                                        {tag}
+                                      </span>
+                                    ))}
+                                  </div>
                                 </div>
                               </div>
-                              <p className="text-xs md:text-sm text-gray-600 line-clamp-2">{p.description}</p>
                             </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))
+                          </CardContent>
+                        </Card>
+                      )
+                    })
                 )}
               </div>
             )}

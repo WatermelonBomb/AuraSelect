@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # PostgreSQL データベース
+  postgres:
+    image: postgres:15-alpine
+    container_name: auraselect-postgres
+    environment:
+      POSTGRES_USER: auraselect
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: auraselect_db
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U auraselect -d auraselect_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auraselect
+
+  # Redis キャッシュ・セッション管理
+  redis:
+    image: redis:7-alpine
+    container_name: auraselect-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - auraselect
+
+  # FastAPI バックエンド (開発用)
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: auraselect-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_SERVER=postgres
+      - REDIS_HOST=redis
+      - ENVIRONMENT=development
+      - DEBUG=true
+    volumes:
+      - ./backend:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - auraselect
+    # 開発時のみ
+    profiles: ["dev"]
+
+  # pgAdmin (データベース管理用)
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: auraselect-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@auraselect.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    networks:
+      - auraselect
+    # 開発時のみ
+    profiles: ["dev", "tools"]
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  auraselect:
+    driver: bridge
