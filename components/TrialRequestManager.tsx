@@ -198,9 +198,12 @@ export default function TrialRequestManager() {
         <CardContent className="p-6">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
+              <label htmlFor="search-trials" className="sr-only">トライアルリクエストを検索</label>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                 <Input
+                  id="search-trials"
+                  name="search"
                   placeholder="顧客名、メール、商品名で検索..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -270,10 +273,12 @@ export default function TrialRequestManager() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <label className="block text-sm font-semibold text-gray-800 mb-2">
+                <label htmlFor="staff-notes" className="block text-sm font-semibold text-gray-800 mb-2">
                   スタッフメモ（任意）
                 </label>
                 <Textarea
+                  id="staff-notes"
+                  name="staffNotes"
                   value={staffNotes}
                   onChange={(e) => setStaffNotes(e.target.value)}
                   placeholder="内部メモや顧客への連絡事項"

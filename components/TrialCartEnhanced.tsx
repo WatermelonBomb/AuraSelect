@@ -177,11 +177,13 @@ export default function TrialCartEnhanced({
 
         {/* メモ入力 */}
         <div>
-          <label className="block text-sm font-semibold text-gray-800 mb-2">
+          <label htmlFor="trial-memo" className="block text-sm font-semibold text-gray-800 mb-2">
             <MessageSquare className="w-4 h-4 inline mr-1" />
             ご要望・メモ（任意）
           </label>
           <Textarea
+            id="trial-memo"
+            name="memo"
             value={memo}
             onChange={(e) => onUpdateMemo(e.target.value)}
             placeholder="香りの好み、肌質、アレルギー、気になることなど何でもお気軽にお書きください"
@@ -196,11 +198,13 @@ export default function TrialCartEnhanced({
             <h4 className="font-semibold text-gray-800 mb-3">連絡先情報（任意）</h4>
             
             <div>
-              <label className="block text-sm font-semibold text-gray-800 mb-2">
+              <label htmlFor="customer-name" className="block text-sm font-semibold text-gray-800 mb-2">
                 <User className="w-4 h-4 inline mr-1" />
                 お名前
               </label>
               <Input
+                id="customer-name"
+                name="customerName"
                 value={customerName}
                 onChange={(e) => setCustomerName(e.target.value)}
                 placeholder="山田太郎"
@@ -214,12 +218,15 @@ export default function TrialCartEnhanced({
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-800 mb-2">
+              <label htmlFor="customer-email" className="block text-sm font-semibold text-gray-800 mb-2">
                 <Mail className="w-4 h-4 inline mr-1" />
                 メールアドレス
               </label>
               <Input
+                id="customer-email"
+                name="customerEmail"
                 type="email"
+                autoComplete="email"
                 value={customerEmail}
                 onChange={(e) => setCustomerEmail(e.target.value)}
                 placeholder="example@email.com"

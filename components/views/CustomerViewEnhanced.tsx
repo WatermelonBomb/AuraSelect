@@ -241,8 +241,11 @@ export default function CustomerViewEnhanced(props: Props) {
             <div className="space-y-4">
               <div className="flex gap-2">
                 <div className="relative flex-1">
+                  <label htmlFor="product-search" className="sr-only">商品を検索</label>
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
                   <Input
+                    id="product-search"
+                    name="productSearch"
                     placeholder="商品を検索..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
