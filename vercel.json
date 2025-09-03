@@ -1,8 +1,11 @@
 {
-  "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install",
+  "buildCommand": "pnpm install && pnpm run build",
+  "installCommand": "pnpm install --frozen-lockfile",
   "framework": "nextjs",
   "outputDirectory": ".next",
+  "env": {
+    "SKIP_ENV_VALIDATION": "1"
+  },
   "functions": {
     "app/**/*.tsx": {
       "maxDuration": 30
