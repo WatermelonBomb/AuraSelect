@@ -1,6 +1,6 @@
 "use client"
 
-import { useAppStore } from '@/lib/store/appStore'
+import { useAppStore } from '../../lib/store/appStore'
 import { categories } from '@/components/data/categories'
 import UnifiedDashboard from '@/components/views/UnifiedDashboard'
 

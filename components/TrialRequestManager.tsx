@@ -33,7 +33,7 @@ import {
   useApproveTrialRequest,
   useRejectTrialRequest,
   useCompleteTrialRequest,
-} from '@/lib/hooks/useTrials'
+} from '../lib/hooks/useTrials'
 import type { TrialRequest } from '@/lib/schemas/trial'
 
 export default function TrialRequestManager() {

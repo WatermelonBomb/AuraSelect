@@ -13,7 +13,7 @@ import { Eye, EyeOff, Loader2, UserPlus, AlertCircle, Mail, User, Lock, Phone } 
 import Link from 'next/link'
 
 import { RegisterSchema, type Register } from '@/lib/schemas/auth'
-import { useRegister } from '@/lib/hooks/useAuth'
+import { useRegister } from '../../lib/hooks/useAuth'
 
 interface RegisterFormProps {
   onSuccess?: () => void

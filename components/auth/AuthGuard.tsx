@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Loader2, AlertCircle, Lock } from 'lucide-react'
 
-import { useAuth, usePermissions } from '@/lib/hooks/useAuth'
+import { useAuth, usePermissions } from '../../lib/hooks/useAuth'
 import type { UserRole } from '@/lib/schemas/auth'
 
 interface AuthGuardProps {

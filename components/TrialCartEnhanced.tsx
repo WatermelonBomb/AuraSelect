@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { useCreateTrialRequest } from '@/lib/hooks/useTrials'
+import { useCreateTrialRequest } from '../lib/hooks/useTrials'
 import type { Product } from '@/components/views/AdminDashboard'
 import type { CreateTrialRequest } from '@/lib/schemas/trial'
 

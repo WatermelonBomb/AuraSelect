@@ -2,8 +2,8 @@
 
 import { useEffect } from "react"
 import { useRouter } from 'next/navigation'
-import { useAuth } from '@/lib/hooks/useAuth'
-import { useAppStore } from '@/lib/store/appStore'
+import { useAuth } from '../lib/hooks/useAuth'
+import { useAppStore } from '../lib/store/appStore'
 import AuthGuard from '@/components/auth/AuthGuard'
 import CustomerPage from '@/components/pages/CustomerPage'
 import StaffPage from '@/components/pages/StaffPage'

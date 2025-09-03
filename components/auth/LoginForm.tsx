@@ -13,7 +13,7 @@ import { Eye, EyeOff, Loader2, LogIn, AlertCircle } from 'lucide-react'
 import Link from 'next/link'
 
 import { LoginSchema, type Login } from '@/lib/schemas/auth'
-import { useLogin } from '@/lib/hooks/useAuth'
+import { useLogin } from '../../lib/hooks/useAuth'
 
 interface LoginFormProps {
   onSuccess?: () => void

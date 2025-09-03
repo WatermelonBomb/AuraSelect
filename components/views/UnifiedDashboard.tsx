@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import TrialRequestManager from "@/components/TrialRequestManager"
 import ProductManager from "@/components/ProductManager"
-import { useAuth } from '@/lib/hooks/useAuth'
+import { useAuth } from '../../lib/hooks/useAuth'
 
 type Props = {
   onBackToCustomer: () => void

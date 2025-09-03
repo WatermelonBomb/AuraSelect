@@ -1,11 +1,11 @@
 "use client"
 
 import { useMemo, useEffect } from 'react'
-import { useAppStore } from '@/lib/store/appStore'
+import { useAppStore } from '../../lib/store/appStore'
 import { categories } from '@/components/data/categories'
 import CustomerView from '@/components/views/CustomerViewEnhanced'
-import { collatorJa, fmtPrice } from '@/lib/utils/index'
-import { useProducts } from '@/lib/hooks/useProducts'
+import { collatorJa, fmtPrice } from '../../lib/utils/index'
+import { useProducts } from '../../lib/hooks/useProducts'
 
 export default function CustomerPage() {
   // Fetch products from API
