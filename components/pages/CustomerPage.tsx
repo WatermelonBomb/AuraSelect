@@ -83,6 +83,9 @@ export default function CustomerPage() {
   const filteredAndSortedProducts = useMemo(() => {
     const q = searchQuery.trim()
     const list = products.filter((p) => {
+      // 非公開商品は顧客画面では表示しない
+      if (!p.isActive) return false
+      
       const inCat = selectedCategory ? p.category === selectedCategory : true
       if (!q) return inCat
       return (
