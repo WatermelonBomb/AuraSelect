@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import TrialCartEnhanced from "@/components/TrialCartEnhanced"
+import ProductReviews from "@/components/reviews/ProductReviews"
 import type { Product, CategoryId } from "@/components/views/AdminDashboard"
 
 // icon は「文字列 or Lucide コンポーネント」の両対応
@@ -137,7 +138,7 @@ export default function CustomerViewEnhanced(props: Props) {
                       <p className="text-gray-700 mt-2">{selectedProduct.description}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-2xl md:text-3xl font-bold luxury-text-gradient">¥{fmtPrice(selectedProduct.price)}</p>
+                      <p className="text-2xl md:text-3xl font-bold luxury-text-gradient">{fmtPrice(selectedProduct.price)}</p>
                       <div className="flex items-center justify-end gap-1">
                         <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                         <span className="font-semibold text-gray-700">{selectedProduct.rating}</span>
@@ -165,7 +166,13 @@ export default function CustomerViewEnhanced(props: Props) {
                   </div>
 
                   <Button
-                    onClick={() => addToTrialCart(selectedProduct)}
+                    onClick={() => {
+                      addToTrialCart(selectedProduct)
+                      // カート追加後にカテゴリ選択画面に戻る
+                      setTimeout(() => {
+                        setSelectedProduct(null)
+                      }, 500) // 500ms後に戻る（ユーザーがフィードバックを見れるように）
+                    }}
                     disabled={trialCart.some((i) => i.id === selectedProduct.id)}
                     className="w-full rose-gold-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow"
                   >
@@ -175,6 +182,15 @@ export default function CustomerViewEnhanced(props: Props) {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Product Reviews Section */}
+            <div className="mt-8">
+              <ProductReviews 
+                productId={selectedProduct.id}
+                productName={selectedProduct.name}
+                canWriteReview={true}
+              />
+            </div>
           </div>
         )}
 
@@ -295,14 +311,9 @@ export default function CustomerViewEnhanced(props: Props) {
                       const isInCart = trialCart.some(item => item.id === p.id)
                       return (
                         <Card key={p.id} onClick={() => setSelectedProduct(p)}
-                          className="glass-effect luxury-shadow hover:luxury-shadow-lg transition-all cursor-pointer border-0 rounded-3xl relative">
-                          {isInCart && (
-                            <div className="absolute top-3 right-3 z-10">
-                              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                                <Sparkles className="w-4 h-4 text-white" />
-                              </div>
-                            </div>
-                          )}
+                          className={`glass-effect luxury-shadow hover:luxury-shadow-lg transition-all cursor-pointer border-0 rounded-3xl relative ${
+                            isInCart ? 'ring-2 ring-emerald-400 bg-emerald-50/30' : ''
+                          }`}>
                           <CardContent className="p-4">
                             <div className="flex gap-4">
                               <img 
@@ -335,6 +346,14 @@ export default function CustomerViewEnhanced(props: Props) {
                                     ))}
                                   </div>
                                 </div>
+                                {isInCart && (
+                                  <div className="mt-3 flex items-center justify-center">
+                                    <span className="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full font-medium flex items-center gap-1">
+                                      <Sparkles className="w-3 h-3 text-emerald-600" />
+                                      トライアルカート追加済み
+                                    </span>
+                                  </div>
+                                )}
                               </div>
                             </div>
                           </CardContent>

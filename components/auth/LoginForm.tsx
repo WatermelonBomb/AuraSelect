@@ -14,6 +14,7 @@ import Link from 'next/link'
 
 import { LoginSchema, type Login } from '@/lib/schemas/auth'
 import { useLogin } from '@/lib/hooks/useAuth'
+import { showLoginSuccess, showApiError } from '@/lib/utils/toast'
 
 interface LoginFormProps {
   onSuccess?: () => void
@@ -34,10 +35,11 @@ export default function LoginForm({ onSuccess }: LoginFormProps) {
 
   const handleSubmit = async (data: Login) => {
     try {
-      await loginMutation.mutateAsync(data)
+      await loginMutation.login(data.email, data.password)
+      showLoginSuccess()
       onSuccess?.()
     } catch (error) {
-      // エラーハンドリングはuseLoginフック内で処理済み
+      showApiError(error)
     }
   }
 
