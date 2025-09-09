@@ -1,0 +1,1 @@
+export type CategoryId = "skincare" | "shampoo" | "treatment" | "styling"
