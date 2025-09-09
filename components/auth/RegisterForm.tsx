@@ -28,18 +28,16 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
   const form = useForm<Register>({
     resolver: zodResolver(RegisterSchema),
     defaultValues: {
+      name: '',
       email: '',
-      username: '',
       password: '',
       confirmPassword: '',
-      full_name: '',
-      phone: '',
     },
   })
 
   const handleSubmit = async (data: Register) => {
     try {
-      await registerMutation.mutateAsync(data)
+      await registerMutation.register(data.email, data.password, data.name)
       onSuccess?.()
     } catch (error) {
       // エラーハンドリングはuseRegisterフック内で処理済み
@@ -63,7 +61,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
             <Alert variant="destructive">
               <AlertCircle className="h-4 w-4" />
               <AlertDescription>
-                {registerMutation.error.message}
+                {registerMutation.error}
               </AlertDescription>
             </Alert>
           )}
@@ -79,7 +77,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
                 autoComplete="email"
                 placeholder="example@email.com"
                 {...form.register('email')}
-                disabled={registerMutation.isPending}
+                disabled={registerMutation.isLoading}
                 className="pl-10"
               />
             </div>
@@ -90,68 +88,24 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
             )}
           </div>
 
-          {/* ユーザー名 */}
-          <div className="space-y-2">
-            <Label htmlFor="username">ユーザー名（任意）</Label>
-            <div className="relative">
-              <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-              <Input
-                id="username"
-                type="text"
-                autoComplete="username"
-                placeholder="ユーザー名"
-                {...form.register('username')}
-                disabled={registerMutation.isPending}
-                className="pl-10"
-              />
-            </div>
-            {form.formState.errors.username && (
-              <p className="text-sm text-red-500">
-                {form.formState.errors.username.message}
-              </p>
-            )}
-          </div>
-
           {/* 氏名 */}
           <div className="space-y-2">
-            <Label htmlFor="full_name">お名前（任意）</Label>
+            <Label htmlFor="name">お名前 *</Label>
             <div className="relative">
               <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
-                id="full_name"
+                id="name"
                 type="text"
                 autoComplete="name"
                 placeholder="山田太郎"
-                {...form.register('full_name')}
-                disabled={registerMutation.isPending}
+                {...form.register('name')}
+                disabled={registerMutation.isLoading}
                 className="pl-10"
               />
             </div>
-            {form.formState.errors.full_name && (
+            {form.formState.errors.name && (
               <p className="text-sm text-red-500">
-                {form.formState.errors.full_name.message}
-              </p>
-            )}
-          </div>
-
-          {/* 電話番号 */}
-          <div className="space-y-2">
-            <Label htmlFor="phone">電話番号（任意）</Label>
-            <div className="relative">
-              <Phone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-              <Input
-                id="phone"
-                type="tel"
-                autoComplete="tel"
-                placeholder="090-1234-5678"
-                {...form.register('phone')}
-                disabled={registerMutation.isPending}
-                className="pl-10"
-              />
-            </div>
-            {form.formState.errors.phone && (
-              <p className="text-sm text-red-500">
-                {form.formState.errors.phone.message}
+                {form.formState.errors.name.message}
               </p>
             )}
           </div>
@@ -167,7 +121,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
                 autoComplete="new-password"
                 placeholder="6文字以上のパスワード"
                 {...form.register('password')}
-                disabled={registerMutation.isPending}
+                disabled={registerMutation.isLoading}
                 className="pl-10 pr-10"
               />
               <Button
@@ -176,7 +130,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
                 size="sm"
                 className="absolute right-0 top-0 h-full px-3"
                 onClick={() => setShowPassword(!showPassword)}
-                disabled={registerMutation.isPending}
+                disabled={registerMutation.isLoading}
               >
                 {showPassword ? (
                   <EyeOff className="h-4 w-4" />
@@ -203,7 +157,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
                 autoComplete="new-password"
                 placeholder="パスワードを再入力"
                 {...form.register('confirmPassword')}
-                disabled={registerMutation.isPending}
+                disabled={registerMutation.isLoading}
                 className="pl-10 pr-10"
               />
               <Button
@@ -212,7 +166,7 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
                 size="sm"
                 className="absolute right-0 top-0 h-full px-3"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                disabled={registerMutation.isPending}
+                disabled={registerMutation.isLoading}
               >
                 {showConfirmPassword ? (
                   <EyeOff className="h-4 w-4" />
@@ -245,9 +199,9 @@ export default function RegisterForm({ onSuccess }: RegisterFormProps) {
           <Button
             type="submit"
             className="w-full"
-            disabled={registerMutation.isPending}
+            disabled={registerMutation.isLoading}
           >
-            {registerMutation.isPending ? (
+            {registerMutation.isLoading ? (
               <>
                 <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                 アカウント作成中...

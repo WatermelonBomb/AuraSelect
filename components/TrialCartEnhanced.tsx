@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { useCreateTrialRequest } from '@/lib/hooks/useTrials'
+import { showTrialSuccess, showApiError, showLoading, dismissToast } from '@/lib/utils/toast'
 import type { Product } from '@/components/views/AdminDashboard'
 import type { CreateTrialRequest } from '@/lib/schemas/trial'
 
@@ -77,31 +78,33 @@ export default function TrialCartEnhanced({
   const handleSendTrialRequest = async () => {
     if (!validateForm()) return
 
-    // 各商品に対して個別にトライアルリクエストを作成
-    for (const product of trialCart) {
-      const requestData: CreateTrialRequest = {
-        product_id: Number(product.id),
-        quantity: 1,
-        trial_duration_days: 7,
-        reason: memo.trim() || '',
-        customer_notes: memo.trim() || '',
-      }
+    const loadingToastId = showLoading('試用リクエストを送信中...')
 
-      try {
+    try {
+      // 各商品に対して個別にトライアルリクエストを作成
+      for (const product of trialCart) {
+        const requestData: CreateTrialRequest = {
+          productId: product.id,
+          customerMessage: memo.trim() || `${product.name}の試用をお願いします。`,
+        }
+
         await createTrialRequestMutation.mutateAsync(requestData)
-      } catch (error) {
-        console.error('Trial request failed:', error)
-        return
       }
+      
+      // 成功時にフォームをリセット
+      onClearCart()
+      onUpdateMemo('')
+      setShowContactForm(false)
+      saveCustomerInfo()
+      
+      dismissToast(loadingToastId)
+      showTrialSuccess()
+      
+    } catch (error) {
+      dismissToast(loadingToastId)
+      showApiError(error)
+      console.error('Trial request failed:', error)
     }
-      
-    // 成功時にフォームをリセット
-    onClearCart()
-    onUpdateMemo('')
-    setShowContactForm(false)
-    saveCustomerInfo()
-      
-    // 成功メッセージはフックで表示される
   }
 
   // 合計金額計算
@@ -123,7 +126,9 @@ export default function TrialCartEnhanced({
     <Card className="glass-effect luxury-shadow-lg border-0 rounded-3xl">
       <CardHeader>
         <CardTitle className="font-playfair flex items-center gap-2">
-          <Sparkles className="w-6 h-6 text-amber-600" />
+          <div className="w-8 h-8 rose-gold-gradient rounded-lg flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-white" />
+          </div>
           トライアルカート ({trialCart.length}点)
         </CardTitle>
       </CardHeader>
@@ -253,10 +258,10 @@ export default function TrialCartEnhanced({
 
           <Button
             onClick={handleSendTrialRequest}
-            disabled={createTrialRequestMutation.isPending}
+            disabled={createTrialRequestMutation.isLoading}
             className="w-full rose-gold-gradient hover:opacity-90 text-white font-semibold py-4 rounded-2xl luxury-shadow"
           >
-            {createTrialRequestMutation.isPending ? (
+            {createTrialRequestMutation.isLoading ? (
               <>
                 <Loader2 className="w-5 h-5 mr-2 animate-spin" />
                 送信中...

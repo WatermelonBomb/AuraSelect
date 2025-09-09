@@ -9,7 +9,7 @@ import { useProducts } from '@/lib/hooks/useProducts'
 
 export default function CustomerPage() {
   // Fetch products from API
-  const { data: productsData, isLoading: isProductsLoading } = useProducts()
+  const { products: apiProducts, isLoading: isProductsLoading, refetch } = useProducts()
   
   const {
     // 商品・フィルタ関連
@@ -46,30 +46,21 @@ export default function CustomerPage() {
 
   // Update store with API data when it loads
   useEffect(() => {
-    if (productsData?.items) {
-      // Convert API products to frontend format
-      const convertedProducts = productsData.items.map(product => ({
-        id: product.id.toString(), // Convert to string for frontend compatibility
-        name: product.name,
-        price: typeof product.price === 'string' ? parseFloat(product.price) : product.price,
-        category: product.category.toLowerCase() as any,
-        description: product.description || '',
-        ingredients: '',
-        fragrance: '',
-        tags: [],
-        stock: product.stock_quantity,
-        image: product.image_urls?.[0] || 'https://images.unsplash.com/photo-1702471896938-6ca42213ab1c?q=80&w=1335&auto=format&fit=crop',
-        rating: 4.5,
-        isActive: product.status === 'ACTIVE',
-        isNew: product.is_featured,
-        isPopular: false,
-        isLimited: false,
-      }))
-      setProducts(convertedProducts)
+    if (apiProducts && apiProducts.length > 0) {
+      setProducts(apiProducts)
     }
-  }, [productsData, setProducts])
+  }, [apiProducts, setProducts])
 
-  const products = storeProducts
+  // Refresh products periodically for real-time updates
+  useEffect(() => {
+    const interval = setInterval(() => {
+      refetch() // Refetch products to get latest changes
+    }, 30000) // Refresh every 30 seconds
+
+    return () => clearInterval(interval)
+  }, [refetch])
+
+  const products = storeProducts.length > 0 ? storeProducts : apiProducts
 
   // 疑似ローディング
   useEffect(() => {
